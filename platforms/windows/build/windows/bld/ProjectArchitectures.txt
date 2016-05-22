@@ -1,0 +1,1 @@
+C:\Users\post\Documents\git\phonegapWin10\platforms\windows\CordovaApp.Windows.jsproj;neutral
