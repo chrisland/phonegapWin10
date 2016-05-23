@@ -1,2 +1,0 @@
-C:\Users\post\Documents\git\phonegapWin10\platforms\windows\CordovaApp.Phone.jsproj;neutral
-C:\Users\post\Documents\git\phonegapWin10\plugins\cordova-plugin-vibration\src\windows\Vibration\Vibration.csproj;neutral
