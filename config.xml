@@ -4,15 +4,14 @@
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
-    </author>
+    <author email="support@phonegap.com" href="http://phonegap.com">Chrisland</author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
 
     <preference name="phonegap-version" value="cli-6.1.0" />
     <preference name="windows-appx-target" value="uap" />
     <preference name="windows-arch" value="anycpu" />
+    <preference name="windows-identity-name" value="17359Chrisland.phonegapWin10" />
 
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
