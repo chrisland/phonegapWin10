@@ -14,7 +14,7 @@
     <preference name="windows-identity-name" value="17359Chrisland.phonegapWin10" />
 
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
-    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+
 
     <icon src="icon.png" />
 
