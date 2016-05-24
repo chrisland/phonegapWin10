@@ -15,6 +15,7 @@
     <preference name="windows-arch" value="anycpu" />
 
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
 
     <icon src="icon.png" />
 
