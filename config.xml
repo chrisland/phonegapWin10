@@ -9,18 +9,12 @@
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="14" />
-    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 
     <preference name="phonegap-version" value="cli-6.1.0" />
     <preference name="windows-appx-target" value="uap" />
     <preference name="windows-arch" value="anycpu" />
 
-    <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
-    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
-    <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1" />
-    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
 
     <icon src="icon.png" />
 
