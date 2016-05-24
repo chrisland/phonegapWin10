@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="17359Chrisland.phonegapWin10" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="config.xml" uri="ms-resource://17359Chrisland.phonegapWin10/Files/config.xml">
+				<Candidate type="Path">
+					<Value>config.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="SplashScreen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/images/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/images/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square150x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square30x30Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/images/Square30x30Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square30x30Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/images/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square310x310Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/images/Square44x44Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square44x44Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/images/Square70x70Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square70x70Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/images/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Square71x71Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/images/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/images/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\Wide310x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://17359Chrisland.phonegapWin10/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="www">
+				<NamedResource name="cordova.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/cordova.js">
+					<Candidate type="Path">
+						<Value>www\cordova.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="cordova_plugins.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/cordova_plugins.js">
+					<Candidate type="Path">
+						<Value>www\cordova_plugins.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="icon.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/icon.png">
+					<Candidate type="Path">
+						<Value>www\icon.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="index.html" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/index.html">
+					<Candidate type="Path">
+						<Value>www\index.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="spec.html" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/spec.html">
+					<Candidate type="Path">
+						<Value>www\spec.html</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="cordova-js-src">
+					<NamedResource name="exec.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/cordova-js-src/exec.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\exec.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="platform.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/cordova-js-src/platform.js">
+						<Candidate type="Path">
+							<Value>www\cordova-js-src\platform.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="css">
+					<NamedResource name="inappbrowser.css" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/css/inappbrowser.css">
+						<Candidate type="Path">
+							<Value>www\css\inappbrowser.css</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="index.css" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/css/index.css">
+						<Candidate type="Path">
+							<Value>www\css\index.css</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="img">
+					<NamedResource name="logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/img/logo.png">
+						<Candidate type="Path">
+							<Value>www\img\logo.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="js">
+					<NamedResource name="index.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/js/index.js">
+						<Candidate type="Path">
+							<Value>www\js\index.js</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="plugins">
+					<ResourceMapSubtree name="cordova-plugin-battery-status">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="BatteryProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-battery-status/src/windows/BatteryProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-battery-status\src\windows\BatteryProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="battery.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-battery-status/www/battery.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-battery-status\www\battery.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-camera">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="CameraProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-camera/src/windows/CameraProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Camera.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-camera/www/Camera.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-camera\www\Camera.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CameraConstants.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-camera/www/CameraConstants.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-camera\www\CameraConstants.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CameraPopoverHandle.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-camera/www/CameraPopoverHandle.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CameraPopoverOptions.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-camera/www/CameraPopoverOptions.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-console">
+						<ResourceMapSubtree name="www">
+							<NamedResource name="console-via-logger.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-console/www/console-via-logger.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-console\www\console-via-logger.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="logger.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-console/www/logger.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-console\www\logger.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-contacts">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="ContactProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/src/windows/ContactProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-contacts\src\windows\ContactProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Contact.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/www/Contact.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-contacts\www\Contact.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ContactAddress.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/www/ContactAddress.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-contacts\www\ContactAddress.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ContactError.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/www/ContactError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-contacts\www\ContactError.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ContactField.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/www/ContactField.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-contacts\www\ContactField.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ContactFieldType.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/www/ContactFieldType.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-contacts\www\ContactFieldType.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ContactFindOptions.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/www/ContactFindOptions.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-contacts\www\ContactFindOptions.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ContactName.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/www/ContactName.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-contacts\www\ContactName.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ContactOrganization.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/www/ContactOrganization.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-contacts\www\ContactOrganization.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="contacts.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-contacts/www/contacts.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-contacts\www\contacts.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-device">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="DeviceProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-device/src/windows/DeviceProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="device.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-device/www/device.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device\www\device.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-device-motion">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="AccelerometerProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-device-motion/src/windows/AccelerometerProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-device-motion\src\windows\AccelerometerProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Acceleration.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-device-motion/www/Acceleration.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device-motion\www\Acceleration.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="accelerometer.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-device-motion/www/accelerometer.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device-motion\www\accelerometer.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-device-orientation">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="CompassProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-device-orientation/src/windows/CompassProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-device-orientation\src\windows\CompassProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="compass.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-device-orientation/www/compass.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device-orientation\www\compass.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CompassError.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-device-orientation/www/CompassError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device-orientation\www\CompassError.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CompassHeading.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-device-orientation/www/CompassHeading.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-device-orientation\www\CompassHeading.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-dialogs">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="NotificationProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-dialogs/src/windows/NotificationProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="notification.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-dialogs/www/notification.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-dialogs\www\notification.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-file">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="FileProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/src/windows/FileProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-file\src\windows\FileProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="DirectoryEntry.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/DirectoryEntry.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\DirectoryEntry.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="DirectoryReader.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/DirectoryReader.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\DirectoryReader.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Entry.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/Entry.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\Entry.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="File.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/File.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\File.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileEntry.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/FileEntry.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\FileEntry.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileError.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/FileError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\FileError.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileReader.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/FileReader.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\FileReader.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileSystem.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/FileSystem.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\FileSystem.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="fileSystemPaths.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/fileSystemPaths.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\fileSystemPaths.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="fileSystems.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/fileSystems.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\fileSystems.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileUploadOptions.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/FileUploadOptions.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\FileUploadOptions.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileUploadResult.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/FileUploadResult.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\FileUploadResult.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileWriter.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/FileWriter.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\FileWriter.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Flags.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/Flags.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\Flags.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="LocalFileSystem.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/LocalFileSystem.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\LocalFileSystem.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Metadata.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/Metadata.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\Metadata.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="ProgressEvent.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/ProgressEvent.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\ProgressEvent.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="requestFileSystem.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/requestFileSystem.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\requestFileSystem.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="resolveLocalFileSystemURI.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/resolveLocalFileSystemURI.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file\www\resolveLocalFileSystemURI.js</Value>
+								</Candidate>
+							</NamedResource>
+							<ResourceMapSubtree name="browser">
+								<NamedResource name="isChrome.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file/www/browser/isChrome.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-file\www\browser\isChrome.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-file-transfer">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="FileTransferProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file-transfer/src/windows/FileTransferProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-file-transfer\src\windows\FileTransferProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="FileTransfer.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file-transfer/www/FileTransfer.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file-transfer\www\FileTransfer.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="FileTransferError.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-file-transfer/www/FileTransferError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-file-transfer\www\FileTransferError.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-geolocation">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="GeolocationProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-geolocation/src/windows/GeolocationProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-geolocation\src\windows\GeolocationProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Coordinates.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-geolocation/www/Coordinates.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-geolocation\www\Coordinates.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="geolocation.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-geolocation/www/geolocation.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-geolocation\www\geolocation.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Position.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-geolocation/www/Position.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-geolocation\www\Position.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="PositionError.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-geolocation/www/PositionError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-geolocation\www\PositionError.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-globalization">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="GlobalizationProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-globalization/src/windows/GlobalizationProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-globalization\src\windows\GlobalizationProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="globalization.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-globalization/www/globalization.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-globalization\www\globalization.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="GlobalizationError.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-globalization/www/GlobalizationError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-globalization\www\GlobalizationError.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-inappbrowser">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="InAppBrowserProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-inappbrowser/src/windows/InAppBrowserProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-inappbrowser\src\windows\InAppBrowserProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="inappbrowser.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-inappbrowser/www/inappbrowser.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-inappbrowser\www\inappbrowser.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-media">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="MediaProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media/src/windows/MediaProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-media\src\windows\MediaProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Media.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media/www/Media.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-media\www\Media.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="MediaError.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media/www/MediaError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-media\www\MediaError.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-media-capture">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="CaptureProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media-capture/src/windows/CaptureProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-media-capture\src\windows\CaptureProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+								<NamedResource name="MediaFile.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media-capture/src/windows/MediaFile.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-media-capture\src\windows\MediaFile.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="capture.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media-capture/www/capture.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-media-capture\www\capture.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CaptureAudioOptions.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media-capture/www/CaptureAudioOptions.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-media-capture\www\CaptureAudioOptions.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CaptureError.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media-capture/www/CaptureError.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-media-capture\www\CaptureError.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CaptureImageOptions.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media-capture/www/CaptureImageOptions.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-media-capture\www\CaptureImageOptions.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="CaptureVideoOptions.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media-capture/www/CaptureVideoOptions.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-media-capture\www\CaptureVideoOptions.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="MediaFile.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media-capture/www/MediaFile.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-media-capture\www\MediaFile.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="MediaFileData.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-media-capture/www/MediaFileData.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-media-capture\www\MediaFileData.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-network-information">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="NetworkInfoProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-network-information/src/windows/NetworkInfoProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="Connection.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-network-information/www/Connection.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-network-information\www\Connection.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="network.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-network-information/www/network.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-network-information\www\network.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-splashscreen">
+						<ResourceMapSubtree name="www">
+							<NamedResource name="splashscreen.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-splashscreen\www\splashscreen.js</Value>
+								</Candidate>
+							</NamedResource>
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="SplashScreenProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-splashscreen\www\windows\SplashScreenProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-statusbar">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="StatusBarProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-statusbar\src\windows\StatusBarProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="statusbar.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-statusbar/www/statusbar.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-statusbar\www\statusbar.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="cordova-plugin-vibration">
+						<ResourceMapSubtree name="src">
+							<ResourceMapSubtree name="windows">
+								<NamedResource name="VibrationProxy.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-vibration/src/windows/VibrationProxy.js">
+									<Candidate type="Path">
+										<Value>www\plugins\cordova-plugin-vibration\src\windows\VibrationProxy.js</Value>
+									</Candidate>
+								</NamedResource>
+							</ResourceMapSubtree>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="www">
+							<NamedResource name="vibration.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/plugins/cordova-plugin-vibration/www/vibration.js">
+								<Candidate type="Path">
+									<Value>www\plugins\cordova-plugin-vibration\www\vibration.js</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="res">
+					<NamedResource name=".pgbomit" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/.pgbomit">
+						<Candidate type="Path">
+							<Value>www\res\.pgbomit</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="icon">
+						<ResourceMapSubtree name="android">
+							<NamedResource name="drawable-hdpi-icon.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/android/drawable-hdpi-icon.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\android\drawable-hdpi-icon.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-ldpi-icon.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/android/drawable-ldpi-icon.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\android\drawable-ldpi-icon.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-mdpi-icon.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/android/drawable-mdpi-icon.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\android\drawable-mdpi-icon.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-xhdpi-icon.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/android/drawable-xhdpi-icon.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\android\drawable-xhdpi-icon.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-xxhdpi-icon.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/android/drawable-xxhdpi-icon.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\android\drawable-xxhdpi-icon.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-xxxhdpi-icon.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/android/drawable-xxxhdpi-icon.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\android\drawable-xxxhdpi-icon.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="ios">
+							<NamedResource name="icon-40.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-40.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-40.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-40@2x.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-40@2x.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-40@2x.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-50.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-50.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-50.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-50@2x.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-50@2x.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-50@2x.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-60.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-60.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-60.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-60@2x.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-60@2x.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-60@2x.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-60@3x.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-60@3x.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-60@3x.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-72.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-72.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-72.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-72@2x.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-72@2x.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-72@2x.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-76.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-76.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-76.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-76@2x.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-76@2x.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-76@2x.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-small.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-small.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-small.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-small@2x.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-small@2x.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-small@2x.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon-small@3x.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon-small@3x.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon-small@3x.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="icon@2x.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/ios/icon@2x.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\ios\icon@2x.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="windows">
+							<NamedResource name="Square150x150Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/windows/Square150x150Logo.png">
+								<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+									<Value>www\res\icon\windows\Square150x150Logo.scale-100.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Square30x30Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/windows/Square30x30Logo.png">
+								<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+									<Value>www\res\icon\windows\Square30x30Logo.scale-100.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Square310x310Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/windows/Square310x310Logo.png">
+								<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+									<Value>www\res\icon\windows\Square310x310Logo.scale-100.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Square44x44Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/windows/Square44x44Logo.png">
+								<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+									<Value>www\res\icon\windows\Square44x44Logo.scale-100.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Square70x70Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/windows/Square70x70Logo.png">
+								<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+									<Value>www\res\icon\windows\Square70x70Logo.scale-100.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Square71x71Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/windows/Square71x71Logo.png">
+								<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+									<Value>www\res\icon\windows\Square71x71Logo.scale-100.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="StoreLogo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/windows/StoreLogo.png">
+								<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+									<Value>www\res\icon\windows\StoreLogo.scale-100.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Wide310x150Logo.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/windows/Wide310x150Logo.png">
+								<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+									<Value>www\res\icon\windows\Wide310x150Logo.scale-100.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="wp8">
+							<NamedResource name="ApplicationIcon.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/wp8/ApplicationIcon.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\wp8\ApplicationIcon.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Background.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/icon/wp8/Background.png">
+								<Candidate type="Path">
+									<Value>www\res\icon\wp8\Background.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="screen">
+						<ResourceMapSubtree name="android">
+							<NamedResource name="drawable-land-hdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-land-hdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-land-hdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-land-ldpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-land-ldpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-land-ldpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-land-mdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-land-mdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-land-mdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-land-xhdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-land-xhdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-land-xhdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-land-xxhdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-land-xxhdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-land-xxhdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-land-xxxhdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-land-xxxhdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-land-xxxhdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-port-hdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-port-hdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-port-hdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-port-ldpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-port-ldpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-port-ldpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-port-mdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-port-mdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-port-mdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-port-xhdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-port-xhdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-port-xhdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-port-xxhdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-port-xxhdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-port-xxhdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="drawable-port-xxxhdpi-screen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/android/drawable-port-xxxhdpi-screen.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\android\drawable-port-xxxhdpi-screen.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="ios">
+							<NamedResource name="Default-568h@2x~iphone.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default-568h@2x~iphone.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default-568h@2x~iphone.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Default-667h.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default-667h.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default-667h.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Default-736h.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default-736h.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default-736h.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Default-Landscape-736h.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default-Landscape-736h.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default-Landscape-736h.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Default-Landscape@2x~ipad.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default-Landscape@2x~ipad.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default-Landscape@2x~ipad.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Default-Landscape~ipad.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default-Landscape~ipad.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default-Landscape~ipad.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Default-Portrait@2x~ipad.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default-Portrait@2x~ipad.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default-Portrait@2x~ipad.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Default-Portrait~ipad.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default-Portrait~ipad.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default-Portrait~ipad.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Default@2x~iphone.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default@2x~iphone.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default@2x~iphone.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="Default~iphone.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/ios/Default~iphone.png">
+								<Candidate type="Path">
+									<Value>www\res\screen\ios\Default~iphone.png</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="windows">
+							<NamedResource name="SplashScreen.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/windows/SplashScreen.png">
+								<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+									<Value>www\res\screen\windows\SplashScreen.scale-100.png</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="SplashScreenPhone.png" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/windows/SplashScreenPhone.png"/>
+						</ResourceMapSubtree>
+						<ResourceMapSubtree name="wp8">
+							<NamedResource name="screen-portrait.jpg" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/res/screen/wp8/screen-portrait.jpg">
+								<Candidate type="Path">
+									<Value>www\res\screen\wp8\screen-portrait.jpg</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="spec">
+					<NamedResource name="helper.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/spec/helper.js">
+						<Candidate type="Path">
+							<Value>www\spec\helper.js</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="index.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/spec/index.js">
+						<Candidate type="Path">
+							<Value>www\spec\index.js</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="lib">
+						<ResourceMapSubtree name="jasmine-1.2.0">
+							<NamedResource name="jasmine-html.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/spec/lib/jasmine-1.2.0/jasmine-html.js">
+								<Candidate type="Path">
+									<Value>www\spec\lib\jasmine-1.2.0\jasmine-html.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="jasmine.css" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/spec/lib/jasmine-1.2.0/jasmine.css">
+								<Candidate type="Path">
+									<Value>www\spec\lib\jasmine-1.2.0\jasmine.css</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="jasmine.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/spec/lib/jasmine-1.2.0/jasmine.js">
+								<Candidate type="Path">
+									<Value>www\spec\lib\jasmine-1.2.0\jasmine.js</Value>
+								</Candidate>
+							</NamedResource>
+							<NamedResource name="MIT.LICENSE" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/spec/lib/jasmine-1.2.0/MIT.LICENSE">
+								<Candidate type="Path">
+									<Value>www\spec\lib\jasmine-1.2.0\MIT.LICENSE</Value>
+								</Candidate>
+							</NamedResource>
+						</ResourceMapSubtree>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="WinJS">
+					<ResourceMapSubtree name="js">
+						<NamedResource name="base.js" uri="ms-resource://17359Chrisland.phonegapWin10/Files/www/WinJS/js/base.js">
+							<Candidate type="Path">
+								<Value>www\WinJS\js\base.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,4 @@
+build\windows\bld\Upload\filemap.pri
+build\windows\bld\Upload\filemap.map.txt
+build\windows\bld\Upload\filemap.scale-240.pri
+build\windows\bld\Upload\filemap.scale-240.map.txt

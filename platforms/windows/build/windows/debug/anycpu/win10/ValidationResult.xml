@@ -1,0 +1,2348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT xml:lang="de-DE" OVERALL_RESULT="FAIL" VERSION="10.0" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=6A697D9E-8751-4770-BCED-214F4655B187" APP_NAME="" APP_VERSION="" OSVERSION="10.0.10586.0" OS="Microsoft Windows 10 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1031" VALIDATION_TYPE="UI" ReportGenerationTime="24.05.2016 14:56:11" ID="68cb95cde8376487e7366be59084cc31">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Test der umkehrbaren Neuinstallation" RATIONALE="Eine umkehrbare Neuinstallation ermöglicht es Benutzern, Anwendungen auf ihrem System erfolgreich zu verwalten (bereitzustellen und zu entfernen)." />
+    <REQUIREMENT NUMBER="2" TITLE="Test der standardmäßigen Installation in den richtigen Ordnern" RATIONALE="Windows bietet bestimmte Orte im Dateisystem für die Speicherung von Programmen und Softwarekomponenten, freigegebenen Anwendungsdaten und Anwendungsdaten für einen bestimmten Benutzer." />
+    <REQUIREMENT NUMBER="3" TITLE="Test der digital signierten Dateien" RATIONALE="Mit einer digitalen Authenticode-Signatur können Benutzer sicher sein, dass die Software echt ist. Mit ihr kann auch festgestellt werden, ob eine Datei manipuliert, beispielsweise mit einem Virus infiziert wurde." />
+    <REQUIREMENT NUMBER="4" TITLE="Test der Unterstützung von x64 Windows" RATIONALE="Damit die Kompatibilität mit 64-Bit-Versionen von Windows erhalten bleibt, ist es notwendig, dass Anwendungen 64 Bit oder zumindest die reibungslose Ausführung von 32-Bit-Windows-Anwendungen unter 64 Bit unterstützen." />
+    <REQUIREMENT NUMBER="5" TITLE="Test der Betriebssystemversion-Überprüfung" RATIONALE="Anwendungen dürfen Versionen nicht auf Gleichheit prüfen (== 5.1). Wenn Sie eine bestimmte Funktion benötigen, prüfen Sie, ob die Funktion verfügbar ist. Wenn Sie Windows XP benötigen, prüfen Sie auf Windows XP oder höher (&gt;= 5.1). Auf diese Weise funktioniert Ihr Erkennungscode auch unter zukünftigen Versionen von Windows. Installationsprogramme für Treiber und Module für die Deinstallation sollten nie die Betriebssystemversion überprüfen." />
+    <REQUIREMENT NUMBER="6" TITLE="Test der Benutzerkontensteuerung (UAC)" RATIONALE="Die meisten Anwendungen erfordern zur Laufzeit keine Administratorberechtigungen. Die Ausführung als Standardbenutzer sollte ausreichen. Windows-Anwendungen müssen ein (eingebettetes oder externes) Manifest zur Definition der Ausführungsebene besitzen, mit dem das Betriebssystem die Information erhält, welche Berechtigungen zur Ausführung der Anwendung benötigt werden." />
+    <REQUIREMENT NUMBER="7" TITLE="An System-Neustart-Manager-Meldungen halten" RATIONALE="Bei einem kritischen Herunterfahren wird an Anwendungen, die auf WM_QUERYENDSESSION hin FALSE zurückgeben, WM_ENDSESSION gesendet, und sie werden geschlossen. Anwendungen, deren Zeitlimit als Reaktion auf WM_QUERYENDSESSION abläuft, werden beendet." />
+    <REQUIREMENT NUMBER="8" TITLE="Test des abgesicherten Modus" RATIONALE="Standardmäßig werden die meisten Treiber und Dienste, die nicht mit Windows vorinstalliert wurden, nicht im abgesicherten Modus gestartet. Sie sollten deaktiviert bleiben, sofern sie nicht für grundlegende Systemvorgänge oder für Diagnose und Wiederherstellung benötigt werden." />
+    <REQUIREMENT NUMBER="9" TITLE="Test der Mehrbenutzersitzungen" RATIONALE="Windows-Benutzer sollten in der Lage sein, ohne Konflikte oder Unterbrechungen gleichzeitige Sitzungen auszuführen. Bei Anwendungen muss sichergestellt sein, dass es sich nicht auf ihre normale Funktionalität auswirkt, wenn sie in mehreren Sitzungen lokal oder remote ausgeführt werden. Anwendungseinstellungen und Datendateien sollten nicht benutzerübergreifend beibehalten werden. Privatsphäre und Voreinstellungen eines Benutzers sollten in der Benutzersitzung isoliert sein." />
+    <REQUIREMENT NUMBER="10" TITLE="Bereitstellungs- und Starttests" RATIONALE="Anwendungsfehler wie Abstürze und Blockaden stellen größere Unterbrechungen für Benutzer dar und sorgen für Frustration. Die Beseitigung dieser Fehler verbessert die Stabilität und Zuverlässigkeit von Anwendungen und bietet Benutzern insgesamt eine bessere Anwendungserfahrung.">
+      <TEST INDEX="50" NAME="Generierung von Bytecode" DESCRIPTION="Die Generierung von Bytecode sollte für Pakete, die eine Windows Store-App mit HTML5 enthalten, erfolgreich abgeschlossen werden können." EXECUTIONTIME="00h:00m:01s.00ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="79" NAME="Handler für den Abbruch von Hintergrundtasks" DESCRIPTION="Die App muss einen Ereignishandler implementieren, um Aufforderungen zum Abbrechen von Hintergrundaufgaben verarbeiten zu können." EXECUTIONTIME="00h:00m:22s.09ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="81" NAME="Start der Plattformversion" DESCRIPTION="Die OSVersionInfo-API sollte von der App nicht in falscher Weise verwendet werden, um die für das Betriebssystem spezifische Benutzerfunktionalität bereitzustellen." EXECUTIONTIME="00h:00m:18s.05ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="47" NAME="App-Start" DESCRIPTION="App-Starttests" EXECUTIONTIME="00h:00m:17s.87ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="80" NAME="App-Vorabstart" DESCRIPTION="Die App muss die Überprüfung des Vorabstarts der App bestehen." EXECUTIONTIME="00h:01m:01s.27ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="21" NAME="Abstürze und Hängen" DESCRIPTION="Beim Testen nicht abstürzen oder blockieren." EXECUTIONTIME="00h:00m:02s.08ms">
+        <RESULT><![CDATA[FAIL]]></RESULT>
+        <MESSAGES>
+          <MESSAGE TEXT="Anwendung 17359Chrisland.phonegapWin10_1.1.1.0_x64__z5dv5rh0r74ap wurde von der Windows-Fehlerberichterstattung ermittelt. Es ist ein Absturz oder eine Blockade aufgetreten." />
+        </MESSAGES>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="11" TITLE="Test der Kompatibilität und Flexibilität" RATIONALE="Wenn Windows ermittelt, dass eine Anwendung einen inkompatiblen Vorgang ausgeführt hat, wird ein Kompatibilitätspatch angewendet und so dafür gesorgt, dass die Anwendung sich richtig verhält. Dies gewährleistet eine positive Benutzererfahrung. Anwendungen sollten sich nicht auf dieses Verhalten verlassen, da sie nur für die ordnungsgemäße Funktion von älteren Anwendungen unter Windows bereitgestellt wird." />
+    <REQUIREMENT NUMBER="12" TITLE="Test der Einhaltung des Pakets" RATIONALE="Dem Paketmanifest fehlten ein oder mehrere erforderliche Attribute.">
+      <TEST INDEX="77" NAME="Anzahl der Anwendungen" DESCRIPTION="Ein Paket darf nur eine App im Manifest definieren." EXECUTIONTIME="00h:00m:00s.87ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="31" NAME="App-Manifest" DESCRIPTION="Das Manifest für Windows Store-App muss gültige Einträge für alle erforderlichen Felder enthalten." EXECUTIONTIME="00h:00m:00s.90ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="74" NAME="Bündelmanifest" DESCRIPTION="Das Bündelmanifest muss gültige Einträge für alle erforderlichen Felder enthalten." EXECUTIONTIME="00h:00m:01s.11ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="75" NAME="Paketgröße" DESCRIPTION="Das Paket darf nicht größer als 4 GB sein." EXECUTIONTIME="00h:00m:00s.94ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="83" NAME="Eingeschränkter Namespace" DESCRIPTION="Überprüft, ob im APPX-Manifest auf eingeschränkte Namespaces verwiesen wird." EXECUTIONTIME="00h:00m:00s.93ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Test der bewährten Methoden der Windows-Sicherheit" RATIONALE="Die standardmäßigen Windows-Sicherheitseinstellungen sollten von einer Anwendung nicht geändert werden." />
+    <REQUIREMENT NUMBER="14" TITLE="Test der Windows-Sicherheitsfunktionen" RATIONALE="Anwendungen müssen Windows-Sicherheitsfunktionen übernehmen.">
+      <TEST INDEX="33" NAME="Analyzer für Binärdateien" DESCRIPTION="Analyse von Sicherheitsfunktionen, die für Binärdateien aktiviert sind" EXECUTIONTIME="00h:00m:01s.52ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="70" NAME="Analyzer für gesperrte Dateien" DESCRIPTION="Analyse der Anwendung, um bekannte unsichere Dateien zu ermitteln" EXECUTIONTIME="00h:00m:00s.80ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Private Codesignatur" DESCRIPTION="Die App sollte Schlüsseldateien für private Codesignaturen nicht packen." EXECUTIONTIME="00h:00m:00s.93ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Test der unterstützten APIs" RATIONALE="Die Anwendung sollte nur auf die APIs verweisen, die vom Windows SDK für Windows Store-Apps zugelassen sind.">
+      <TEST INDEX="38" NAME="Unterstützte APIs" DESCRIPTION="Windows Store-App darf nur unterstützte Plattform-APIs verwenden." EXECUTIONTIME="00h:00m:02s.56ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Test der Leistung" RATIONALE="Die Anwendung sollte beim Start und beim Anhalten als schnell und gut reagierend wahrgenommen werden und dabei im angemessenen Umfang Systemressourcen (CPU, Datei-E/A, Arbeitsspeicher usw.) nutzen, um schnelles Umschalten und Multitasking zwischen vorher nicht geöffneten Anwendungen zu ermöglichen." />
+    <REQUIREMENT NUMBER="19" TITLE="Tests zu App-Manifestressourcen" RATIONALE="Das App-Paketmanifest sollte gültige Ressourcen besitzen, die gemäß App-Verpackungsspezifikation und App-Manifestschema in der Datei &quot;resources.pri&quot; definiert sind.">
+      <TEST INDEX="45" NAME="App-Ressourcen" DESCRIPTION="Das Paket sollte gültige Ressourcen besitzen, die in der Datei &quot;resources.pri&quot; definiert sind." EXECUTIONTIME="00h:00m:00s.70ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Branding" DESCRIPTION="Die App sollte nicht die von Windows SDK-Beispielen oder Visual Studio gepackten Standardbilder verwenden." EXECUTIONTIME="00h:00m:01s.18ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Test der Debugkonfiguration" RATIONALE="Die App sollte keine Debugbinärdateien installieren.">
+      <TEST INDEX="46" NAME="Debugkonfiguration" DESCRIPTION="Die App sollte keine Debugbinärdateien installieren." EXECUTIONTIME="00h:00m:00s.90ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="Dateicodierungstest" RATIONALE="Pakete, die eine Windows Store-App mit HTML5 enthalten, müssen die richtige Dateicodierung aufweisen.">
+      <TEST INDEX="49" NAME="UTF-8-Dateicodierung" DESCRIPTION="Pakete, die eine Windows Store-App mit HTML5 enthalten, müssen die richtige Dateicodierung aufweisen." EXECUTIONTIME="00h:00m:01s.02ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Direct3D-Featuretest" RATIONALE="Die App sollte die Direct3D-Funktion ordnungsgemäß verwenden.">
+      <TEST INDEX="51" NAME="Direct3D-Unterstützung auf Funktionsebene" DESCRIPTION="Anwendungen müssen Inhalt auf Direct3D 9.1-Hardware auf Funktionsebene rendern." EXECUTIONTIME="00h:00m:05s.32ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="71" NAME="Direct3D-Trimmen nach dem Anhalten" DESCRIPTION="Anwendungen müssen &quot;IDXGIDevice3::Trim()&quot; auf den Direct3D-Geräten aufrufen, die sie bei der Verarbeitung einer Anweisung zum Anhalten erstellen." EXECUTIONTIME="00h:00m:00s.73ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="App-Funktionstest" RATIONALE="Pakete, die Sonderfunktionen deklarieren, müssen Begründungen während des Onboarding-Prozesses liefern.">
+      <TEST INDEX="52" NAME="Sonderfunktionen" DESCRIPTION="Pakete, die Sonderfunktionen deklarieren, müssen Begründungen während des Onboarding-Prozesses liefern." EXECUTIONTIME="00h:00m:01s.02ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime-Metadatenvalidierung" RATIONALE="Metadaten müssen in allen Generierungsquellen konform und konsistent sein.">
+      <TEST INDEX="56" NAME="ExclusiveTo-Attribut" DESCRIPTION="Eine Klasse darf keine Schnittstelle implementieren, die das Attribut &quot;ExclusiveTo&quot; für eine andere Klasse besitzt." EXECUTIONTIME="00h:00m:06s.15ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Typspeicherort" DESCRIPTION="Typen müssen in der Metadatendatei mit dem längsten übereinstimmenden Namespace definiert werden." EXECUTIONTIME="00h:00m:01s.11ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Unterscheidung von Groß-/Kleinschreibung bei Typnamen" DESCRIPTION="Namespace- und Typnamen dürfen sich nicht nur durch die Groß-/Kleinschreibung unterscheiden." EXECUTIONTIME="00h:00m:00s.81ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Richtigkeit des Typnamens" DESCRIPTION="Im Windows-Namespace können sich nur Systemtypen befinden, während sich im globalen Namespace gar keine Typen befinden können." EXECUTIONTIME="00h:00m:00s.81ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="Richtigkeit allgemeiner Metadaten" DESCRIPTION="Gültige und richtige Metadatendateien müssen verschiedene Anforderungen erfüllen." EXECUTIONTIME="00h:00m:05s.29ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Eigenschaften" DESCRIPTION="Leseschutz- und Indexer-Eigenschaften können nicht verwendet werden. Der Typ entsprechender Getter- und Setter-Methoden muss übereinstimmen." EXECUTIONTIME="00h:00m:00s.76ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Paketintegritätsprüfung" RATIONALE="Überprüfung der Inhalte des App-Pakets auf Korrektheit.">
+      <TEST INDEX="63" NAME="Der Plattform entsprechende Dateien" DESCRIPTION="Von der App dürfen keine Dateien installiert werden, die nicht der Architektur des Zielprozessors entsprechen." EXECUTIONTIME="00h:00m:00s.81ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="66" NAME="Überprüfung der unterstützten Verzeichnisstruktur" DESCRIPTION="Überprüft jede Datei im Paket, sodass alle Dateinamen kürzer sind als &quot;MAX_PATH&quot;." EXECUTIONTIME="00h:00m:00s.89ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="26" TITLE="Unterstützung für hohe DPI-Werte" RATIONALE="Die Anwendung muss als mit DPI-Werten kompatibel festgelegt sein, damit die Benutzeroberfläche in einer Vielzahl von Anzeigeeinstellungen mit hohen DPI-Werten konsistent gut dargestellt wird." />
+    <REQUIREMENT NUMBER="27" TITLE="Ressourcenverwendungstest" RATIONALE="WinJS-Hintergrundaufgaben müssen &quot;close()&quot; aufrufen, um Ressourcen freizugeben.">
+      <TEST INDEX="68" NAME="WinJS-Hintergrundtask" DESCRIPTION="WinJS-Hintergrundaufgaben müssen &quot;close()&quot; aufrufen, um Ressourcen freizugeben." EXECUTIONTIME="00h:00m:01s.13ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="17359Chrisland.phonegapWin10" Type="Application" Source="AppxPackage" Publisher="CN=6A697D9E-8751-4770-BCED-214F4655B187" Version="1.1.1.0" Language="1033" InstallDate="05/24/2016 12:53:27" RootDirPath="C:\Program Files\WindowsApps\17359Chrisland.phonegapWin10_1.1.1.0_x64__z5dv5rh0r74ap" Id="0000786bc4412d01bf705d8646f92347bb3700000904">
+        <Indicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="17359Chrisland.phonegapWin10_1.1.1.0_x64__z5dv5rh0r74ap">
+              <Package>
+                <Identity Name="17359Chrisland.phonegapWin10" Publisher="CN=6A697D9E-8751-4770-BCED-214F4655B187" Version="1.1.1.0" ProcessorArchitecture="x64" />
+                <PhoneIdentity PhoneProductId="557174e0-21a8-11e6-b1ae-338d99724fa5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+                <Properties>
+                  <DisplayName>phonegapWin10</DisplayName>
+                  <PublisherDisplayName>Chrisland</PublisherDisplayName>
+                  <Logo>images\StoreLogo.png</Logo>
+                </Properties>
+                <Dependencies>
+                  <TargetDeviceFamily MaxVersionTested="10.0.10586.0" MinVersion="10.0.10240.0" Name="Windows.Universal" />
+                  <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+                  <PackageDependency Name="Microsoft.NET.Native.Framework.1.3" MinVersion="1.3.23901.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+                  <PackageDependency Name="Microsoft.NET.Native.Runtime.1.3" MinVersion="1.3.23901.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+                </Dependencies>
+                <Resources>
+                  <Resource Language="DE-DE" />
+                  <Resource Scale="100" />
+                </Resources>
+                <Applications>
+                  <Application Id="com.chrisland.phonegapwin10" StartPage="ms-appx-web://com.chrisland.phonegapwin10/www/index.html">
+                    <VisualElements BackgroundColor="#464646" Description="CordovaApp" DisplayName="phonegapWin10" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" ForegroundText="light">
+                      <SplashScreen Image="images\splashscreen.png" />
+                      <DefaultTile ShortName="PhonegapWin10" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
+                      <InitialRotationPreference>
+                        <Rotation Preference="portrait" />
+                        <Rotation Preference="landscape" />
+                        <Rotation Preference="landscapeFlipped" />
+                      </InitialRotationPreference>
+                    </VisualElements>
+                    <ApplicationContentUriRules>
+                      <Rule Match="ms-appx-web:///" Type="include" WindowsRuntimeAccess="all" />
+                    </ApplicationContentUriRules>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="internetClient" />
+                  <Capability Name="contacts" />
+                  <DeviceCapability Name="webcam" />
+                  <DeviceCapability Name="location" />
+                  <DeviceCapability Name="microphone" />
+                </Capabilities>
+                <Extensions>
+                  <Extension Category="windows.activatableClass.inProcessServer">
+                    <InProcessServer>
+                      <Path>17359Chrisland.phonegapWin10.dll</Path>
+                      <ActivatableClass ActivatableClassId="GlobalizationProxy.GlobalizationProxy" ThreadingModel="both" />
+                    </InProcessServer>
+                  </Extension>
+                </Extensions>
+              </Package>
+            </PackageManifest>
+            <BundleManifest PackageFamilyName="17359Chrisland.phonegapWin10_z5dv5rh0r74ap">
+              <Bundle SchemaVersion="2.0">
+                <Identity Name="17359Chrisland.phonegapWin10" Publisher="CN=6A697D9E-8751-4770-BCED-214F4655B187" Version="1.1.1.0" />
+                <Packages>
+                  <Package Type="application" Version="1.1.1.0" Architecture="x86" FileName="CordovaApp.Windows10_1.1.1.0_x86.appx" Offset="9483212" Size="4544838">
+                    <Resources>
+                      <Resource Language="DE-DE" />
+                      <Resource Scale="100" />
+                    </Resources>
+                  </Package>
+                  <Package Type="application" Version="1.1.1.0" Architecture="x64" FileName="CordovaApp.Windows10_1.1.1.0_x64.appx" Offset="4892678" Size="4590443">
+                    <Resources>
+                      <Resource Language="DE-DE" />
+                      <Resource Scale="100" />
+                    </Resources>
+                  </Package>
+                  <Package Type="application" Version="1.1.1.0" Architecture="arm" FileName="CordovaApp.Windows10_1.1.1.0_ARM.appx" Offset="67" Size="4562605">
+                    <Resources>
+                      <Resource Language="DE-DE" />
+                      <Resource Scale="100" />
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="1.1.1.0" ResourceId="split.scale-240" FileName="CordovaApp.Windows10_1.1.1.0_scale-240.appx" Offset="4562769" Size="329818">
+                    <Resources>
+                      <Resource Scale="240" />
+                    </Resources>
+                  </Package>
+                </Packages>
+              </Bundle>
+            </BundleManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="000000854575187645560cbe5da070dff0685b332c57">
+            <File Name="17359Chrisland.phonegapWin10.exe" Id="00007130c3404a604464fd24cf7baca9fb2c5f1662f8" ProductVersion="0.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000602" FileVersion="0.0.0.0" Size="0x3c00" SizeOfImage="0x7000" PeHeaderHash="010137a037d53a0bd11f069952bee13660b1243d415b" PeChecksum="0x0" BinProductVersion="0.0.0.0" BinFileVersion="0.0.0.0" FileDescription=" " InternalName="17359Chrisland.phonegapWin10.exe" LegalCopyright=" " LinkDate="05/24/2016 12:50:51" BinaryType="PE64_AMD64" OriginalFileName="17359Chrisland.phonegapWin10.exe" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\17359chrisland.phonegapwin10.exe" LongPathHash="00000eac5a751a0789ab0487f64dccfe6c0925e47945" />
+            <File Name="GlobalizationProxy.winmd" Id="00009b63ab08127ab23f471ae5628942535830354a85" ProductName="GlobalizationProxy" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x5200" SizeOfImage="0xc000" PeHeaderHash="01016bedba8d4dcfdda59577119780feb98cd38f46b7" PeChecksum="0x0" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="GlobalizationProxy" InternalName="GlobalizationProxy.winmdobj" LegalCopyright="Copyright ©  2014" LinkDate="12/05/2014 14:45:13" BinaryType="PE32_CLR_IL" ClrVersion="WindowsRuntime 1.2;CLR v4.0.30319" OriginalFileName="GlobalizationProxy.winmdobj" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\globalizationproxy.winmd" LongPathHash="000082362a7d4cf4cf94dfb6fa148c591c88eb77cea4" />
+            <File Name="resources.pri" Id="00007008ec336c720e6b1d3a479ed8646ab6e0662737" Size="0x5460" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\resources.pri" LongPathHash="0000be4e9d6201bfe508d9df5c033cfc2a6ee7168786" />
+            <File Name="cordova.js" Id="000069fd03e7f15f0d9322ee4cf4c0d7835a9b83eab7" Size="0xef97" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\cordova.js" LongPathHash="0000d041f16eb9c0de144b8967d4eb77a0a29d972056" />
+            <File Name="cordova_plugins.js" Id="000046bed27ddd84d6b661931baabf0357b8a92f9a76" Size="0x56d2" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\cordova_plugins.js" LongPathHash="0000029ed4a0894ad53e395e4c4b2c1fd3ab958e921c" />
+            <File Name="index.html" Id="0000b34e93c78a3bf3f7b84506c7c5014eba42058de1" Size="0xaad" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\index.html" LongPathHash="000078b2d9d85e03ad24187e96d2c21a980ec3518f82" />
+            <File Name="spec.html" Id="0000a0b78c721112cb1559dc0ebe866c869d2c33bda3" Size="0x9e7" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\spec.html" LongPathHash="00004821a8681530bdfc37c1b615972c5bf60ebc3bea" />
+            <File Name="17359Chrisland.phonegapWin10.dll" Id="0000b4f5fb090fcc8f355d17e90dda6c06e4dc13b160" ProductVersion="0.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000602" FileVersion="0.0.0.0" Size="0x130000" SizeOfImage="0x134000" PeHeaderHash="010190573ff55fc69133cbc9d4891cdb0f387c46a2e1" PeChecksum="0x0" BinProductVersion="0.0.0.0" BinFileVersion="0.0.0.0" FileDescription=" " InternalName="17359Chrisland.phonegapWin10.exe" LegalCopyright=" " LinkDate="05/24/2016 12:50:51" BinaryType="PE64_AMD64" OriginalFileName="17359Chrisland.phonegapWin10.exe" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\17359chrisland.phonegapwin10.dll" LongPathHash="000062eaccee8e7fe2a5d155dd2e0b733db5cd215e85" />
+            <File Name="ClrCompression.dll" Id="00003e0ead7458e4ad4ec0ca220a18be2728eae6ea20" ProductName="Microsoft® .NET Framework" CompanyName="Microsoft Corporation" ProductVersion="1.0.23123.00 built by: PROJECTKREL" VerLanguage="1033" SwitchBackContext="0x0100000000000602" FileVersion="1.0.23123.00 built by: PROJECTKREL" Size="0xff58" SizeOfImage="0x11000" PeHeaderHash="010180133b75799bcf35dee08546b18ddf87cb3a3b7d" PeChecksum="0x15e25" BinProductVersion="1.0.23123.0" BinFileVersion="1.0.23123.0" FileDescription="ClrCompression" InternalName="ClrCompression" LegalCopyright="© Microsoft Corporation.  All rights reserved." LinkDate="07/23/2015 04:01:33" BinaryType="PE64_AMD64" OriginalFileName="ClrCompression" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\clrcompression.dll" LongPathHash="00003ec0717ab3e51b0a1570cdfc522b6b150994275a" />
+            <File Name="InAppBrowserProxy.js" Id="0000e0ce467b19f31b8cbd3df45d8dfcab4d30803277" Size="0x353d" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-inappbrowser\src\windows\inappbrowserproxy.js" LongPathHash="0000f56d6d54f42261a53310f9e4865bd22c397b9ef7" />
+            <File Name="CaptureImageOptions.js" Id="0000d06025efd7d3734db5f3ceb2b90a669ea5dab6e9" Size="0x4a0" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media-capture\www\captureimageoptions.js" LongPathHash="0000541b920295707024274fdf388d2c9d7bd6470e8d" />
+            <File Name="CaptureVideoOptions.js" Id="0000980fc82d969d34abe60d680272ff7e67e318397b" Size="0x57a" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media-capture\www\capturevideooptions.js" LongPathHash="00009b43565877effdb915068c9b72faa7de48684dcb" />
+            <File Name="capture.js" Id="0000c8d873410465ebae6a1694ad552fa3dd1f9cb3a1" Size="0xca8" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media-capture\www\capture.js" LongPathHash="000044a5b8b318568ae46ab309668b51b4695cda815a" />
+            <File Name="CaptureError.js" Id="0000f6ca386a70fd2d4ea50cf626e1d3fb51c9827063" Size="0x689" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media-capture\www\captureerror.js" LongPathHash="00009c389cfa628e4224820469b2dd92a21e815a849d" />
+            <File Name="Media.js" Id="00002ea55c752066afbbed5cb6fee03dd2371bdd5ec3" Size="0x1a8f" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media\www\media.js" LongPathHash="00005c18de06a16c1a1b9718ae53c85c0e553dae9ef7" />
+            <File Name="Connection.js" Id="0000cd6c58c06688d486c67c2c85eb3fe24b33e04e5e" Size="0x48e" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-network-information\www\connection.js" LongPathHash="0000c43e9072be776750fc974468d24f62907377c5c5" />
+            <File Name="CaptureProxy.js" Id="00002e605e3ae80fba757db13fd49f8fcaf0d7ffb2ac" Size="0x6324" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media-capture\src\windows\captureproxy.js" LongPathHash="0000cdeab9410851c4eebbd8a4226647ce12e7d2497e" />
+            <File Name="MediaFile.js" Id="000014ca16214e514dfd221e5bc78d66f4bf4d87076f" Size="0x80d" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media-capture\www\mediafile.js" LongPathHash="000061fc6cbfa46aa000696260e72c4f0418e2eb634f" />
+            <File Name="NetworkInfoProxy.js" Id="0000eda1f99f2e69605e25462271e742472e510e47ba" Size="0xb3e" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-network-information\src\windows\networkinfoproxy.js" LongPathHash="0000326d12c8aec3ba00ab715e516753cfd23fd46234" />
+            <File Name="MediaFile.js" Id="00009811c4e5745bc720174e76ff2908ae392b19873c" Size="0xc9a" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media-capture\src\windows\mediafile.js" LongPathHash="0000d01a8186b42e2632a212eaa225309e6b5e07454c" />
+            <File Name="network.js" Id="000096a299a73f96eee85832bcc9fb4de0ad3a9d1539" Size="0xd23" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-network-information\www\network.js" LongPathHash="00004762eded7059b93be1920c25c19e86abf59c7584" />
+            <File Name="SplashScreenProxy.js" Id="0000ef8c2b77b20cf107aa5a940468a32a25adeb2689" Size="0xb36" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-splashscreen\www\windows\splashscreenproxy.js" LongPathHash="00003e2757182519e9ac76685be32dfae6205bc261ee" />
+            <File Name="globalization.js" Id="0000d08e041d2efa7a1e9b019c6275616f0d0c2a7c3d" Size="0x4177" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-globalization\www\globalization.js" LongPathHash="0000a7edb7f3d9794647dcf6b39e75c57f890b711f14" />
+            <File Name="inappbrowser.js" Id="0000df203839cbf9e683366f8b8c66aa7c94fa1716dc" Size="0x10d8" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-inappbrowser\www\inappbrowser.js" LongPathHash="0000feb7e5fd6bdf4106ad573d9de234c2f2ac7b4d0a" />
+            <File Name="MediaError.js" Id="0000e412bd50e5414348ab0192c65520d8980c8d03bd" Size="0x907" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media\www\mediaerror.js" LongPathHash="0000638d083a2807796ec43046ebd3f4db79a1ca0cfa" />
+            <File Name="GlobalizationError.js" Id="0000b5316837561a921dff186949036638375712ebec" Size="0x54d" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-globalization\www\globalizationerror.js" LongPathHash="0000914f566f1f9aced647bfacaa5c6de220a82de74c" />
+            <File Name="StatusBarProxy.js" Id="0000ddefe29a7de92f9881c63164d80c9ddc1e65c7de" Size="0xebe" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-statusbar\src\windows\statusbarproxy.js" LongPathHash="0000aa72f7e13c0e822278e834437f137e8562d66402" />
+            <File Name="splashscreen.js" Id="00002a705f87a31967fbbc95616a6272506316542a58" Size="0x498" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-splashscreen\www\splashscreen.js" LongPathHash="0000a1710e9db206aad86906c62af1cb9c2f307eb08c" />
+            <File Name="statusbar.js" Id="000060a3e6b16c2965801567feda45004a6500f16ed7" Size="0xd33" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-statusbar\www\statusbar.js" LongPathHash="00009f7374599e318f5629da733cde265f1886606677" />
+            <File Name="VibrationProxy.js" Id="00001769d59d6088c64ba16837dd463c086818a92f72" Size="0x20d6" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-vibration\src\windows\vibrationproxy.js" LongPathHash="000017818e6a252d9540cb2e25ef014008a68d220878" />
+            <File Name="MediaFileData.js" Id="00004ed1c1603a87d7f0b967c23bcfeaedb9877201eb" Size="0x573" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media-capture\www\mediafiledata.js" LongPathHash="0000870d4fa0d596fb22ca6e1b2c4ff18707e24b495f" />
+            <File Name="MediaProxy.js" Id="0000e00b73f71071911d2373260a0526be7dd4fbe076" Size="0x3b25" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media\src\windows\mediaproxy.js" LongPathHash="0000cfaa1d89754963fb449899f863813adf06b13930" />
+            <File Name="CaptureAudioOptions.js" Id="0000d98a235e7cae1412e4d55ed56049cc6f1c52ce01" Size="0x4f9" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-media-capture\www\captureaudiooptions.js" LongPathHash="000034c22267138f8d5edafc7a69b4ce5959d1950bf0" />
+            <File Name="jasmine-html.js" Id="0000b81e1a586e905ed958c9a7b2285506de1c0fd1ae" Size="0x4a7c" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\spec\lib\jasmine-1.2.0\jasmine-html.js" LongPathHash="0000576fb475efaacae4fa4625acb92ca456873912dc" />
+            <File Name="helper.js" Id="0000f7cee7a95ae0a920dc19c285758fb82b2a5a6610" Size="0x4f3" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\spec\helper.js" LongPathHash="0000c014988cd7563295b26674bd9c562f6c3a35f9c6" />
+            <File Name="index.js" Id="000048ed3ff6bd45f995e63ccbdb945e81fb62723fb1" Size="0xa2f" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\spec\index.js" LongPathHash="0000d56ae839d5729d9f10499795224371be1036e97c" />
+            <File Name="jasmine.js" Id="0000fd3911b419bca1282f80dbf5262778cd1fe35dcb" Size="0x10c24" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\spec\lib\jasmine-1.2.0\jasmine.js" LongPathHash="0000c1218bafef857a616e51fc760e53a3121b5713a6" />
+            <File Name="vibration.js" Id="0000e10160322aed5e10b42a65fc15cfde4cf7bcf341" Size="0x1555" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-vibration\www\vibration.js" LongPathHash="000097c989907ff59b50469cbbf30663179c921ca568" />
+            <File Name="S-1-5-21-943326627-433281058-680314338-1001-MergedResources-0.pri" Id="000043a6492e20997a9c884128905045eed071489080" Size="0x3250" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\microsoft.system.package.metadata\s-1-5-21-943326627-433281058-680314338-1001-mergedresources-0.pri" LongPathHash="00009635ac378f64aa7336d56de8610cc346e1e95c72" />
+            <File Name="base.js" Id="000042a024a64b5f398079b3bf324312274f8bf00961" Size="0x132b11" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\winjs\js\base.js" LongPathHash="000023e1987ccded50a54cfe89a48962d04e93348915" />
+            <File Name="exec.js" Id="0000b46aa05c43df1aaec9612aacf54f7821c8524ba6" Size="0x130a" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\cordova-js-src\exec.js" LongPathHash="000015f82e97d8c733bdf8ecb73fc3d9f2cd5421a2fa" />
+            <File Name="platform.js" Id="00009aafe663654ec02dbab3a3541d728f5d687320f6" Size="0x1805" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\cordova-js-src\platform.js" LongPathHash="0000d25eac38d116fe5d053422a9b77ce3cff2b60278" />
+            <File Name="index.js" Id="000048a0860e72f53f0723b9d07a26c5cb5876fa1876" Size="0x77e" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\js\index.js" LongPathHash="0000342d98f2d5221895f0fbaa196fc9a5bc42ddfada" />
+            <File Name="BatteryProxy.js" Id="00007b0278a47343e2fcd2793bf96a5d7d51ce3179f2" Size="0xade" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-battery-status\src\windows\batteryproxy.js" LongPathHash="000024313e59b74fe1b43bda46db77884eab542df28b" />
+            <File Name="CameraConstants.js" Id="000077c09e58bda3f5cb25cadcb7f2c943efea6a4cc5" Size="0x995" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-camera\www\cameraconstants.js" LongPathHash="00009fceeaa75235bf4dc5bea2bb3aa80543cdf80b70" />
+            <File Name="logger.js" Id="0000a3e9b1c98a1f8cf00eedf0658de5e1c13728b927" Size="0x2856" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-console\www\logger.js" LongPathHash="0000864cdd1fe442fa0244c4010273b442d25cde488a" />
+            <File Name="CameraProxy.js" Id="00007d3957b95bcbdafcf9cdcd1d4c19115222d18c5f" Size="0x9254" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-camera\src\windows\cameraproxy.js" LongPathHash="000096ee583945d35464c8e11f25ab28935fcaa34d90" />
+            <File Name="CameraPopoverHandle.js" Id="000086ec946d1a9beb6957eae4b287b49655397b5bb5" Size="0x4c4" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-camera\www\camerapopoverhandle.js" LongPathHash="000012f9a5d5fdecb897a385208274aa0cf35266dce2" />
+            <File Name="CameraPopoverOptions.js" Id="000096c4b19530be40a2adae95ee9cfa5bc84bd469e7" Size="0x8fc" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-camera\www\camerapopoveroptions.js" LongPathHash="00000a30058a0b3d0bac87a45bb63cabfda886e8197c" />
+            <File Name="Camera.js" Id="00009d59247ac23559b12c4e5014120b7dae97f2b709" Size="0x2037" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-camera\www\camera.js" LongPathHash="00004d7fdb187318783ebb8c977d526f4a81f0c466a4" />
+            <File Name="console-via-logger.js" Id="0000ad91a2ae1b3d8090a7d9e665c0731777c77d2b87" Size="0x1af3" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-console\www\console-via-logger.js" LongPathHash="00004af57ce6b6769346da42bc6390ad19da3630a695" />
+            <File Name="ContactProxy.js" Id="0000cfe8f81e879f545196ed7a0267c3044247846ee2" Size="0x493f" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\src\windows\contactproxy.js" LongPathHash="0000c66c20e9bc2a03871f13a17babbfc8874ee0b19e" />
+            <File Name="Contact.js" Id="0000a8288ccaf465acb8de614ba8b3ed1077e47ef992" Size="0x1671" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\www\contact.js" LongPathHash="000044064e3a16ddb1d46c5af5f73a95b2a8ce0fd08a" />
+            <File Name="ContactAddress.js" Id="00006c11d285dc100bf5ec34a72d5305c6ed43171075" Size="0x687" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\www\contactaddress.js" LongPathHash="0000a2fef1b4b7fcf8a2033dd8775e4ad47fea2b8683" />
+            <File Name="battery.js" Id="000052cdd420725ab3140a60cbe2d1731e3e44371eb4" Size="0xfbe" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-battery-status\www\battery.js" LongPathHash="0000ab3be866406061ced11f165bd1565181ef87a89c" />
+            <File Name="DirectoryReader.js" Id="00008c0df842b05b6565ca6ef696d2561347c154cc97" Size="0xaac" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\directoryreader.js" LongPathHash="00004f840878fda72020f85d83107efd884aceb57b2c" />
+            <File Name="Entry.js" Id="0000fa4e292cd14a9d605e97693c98c39f5d94a2196b" Size="0x26d0" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\entry.js" LongPathHash="00001d63c51aef2b0532421f2215ad97a166a67424a4" />
+            <File Name="accelerometer.js" Id="000065136903f4e67a0875f6b9241d6ea358ea332f5b" Size="0x1ae1" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-device-motion\www\accelerometer.js" LongPathHash="00005a97cc855cdb7268a4af2acfcd254791ab2ee7a3" />
+            <File Name="device.js" Id="000054c3139bcc4b3e5cb2bddcefc866ab2e04265130" Size="0xbf9" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-device\www\device.js" LongPathHash="000092eaf127aa0f9a15c561d09fbc7d3d22e838b3c2" />
+            <File Name="compass.js" Id="000076724427d8ef23202aa233eeafc5fc94f23ebf84" Size="0x13fa" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-device-orientation\www\compass.js" LongPathHash="000016bb92984b54abde04b10f6c72bbf862d2c9d830" />
+            <File Name="File.js" Id="0000694e8016fef08ae7388520f3363a5fce45f0fe84" Size="0xa9b" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\file.js" LongPathHash="0000e996edfb8ba7b350fd99ede0067d7dfaae4ade6f" />
+            <File Name="AccelerometerProxy.js" Id="0000d7b3c54efa5b34cbdbae73a60a41dc4ea8547f69" Size="0xa7b" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-device-motion\src\windows\accelerometerproxy.js" LongPathHash="00002e414c8d36f27241b032f046f3108bcaa6147438" />
+            <File Name="notification.js" Id="0000d30536d816ced599fc7ab8cabf5c15d1397fedad" Size="0x1505" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-dialogs\www\notification.js" LongPathHash="0000bc99941eea52abd5ad88dc66c22e48cae68cb4f7" />
+            <File Name="FileEntry.js" Id="0000af5bfe2e77d5083d1f4c479defa832bab9f9a94e" Size="0xd5d" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\fileentry.js" LongPathHash="000053a53f0cb573ece3bbfd43e4086ea4cc9cdfafa8" />
+            <File Name="ContactName.js" Id="0000857335fdbd83f5d1e20ff923d094f6fd04820abf" Size="0x5b2" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\www\contactname.js" LongPathHash="0000cdd1d4fd1f8ae55d7a3cd4094a085231eb9953bf" />
+            <File Name="NotificationProxy.js" Id="0000c977d695b31d98b7c50e2657c9fd6224e10381a2" Size="0x1f51" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-dialogs\src\windows\notificationproxy.js" LongPathHash="00008834dcd19ea3f0ec5d29a7ae6ca7261a88483945" />
+            <File Name="ContactError.js" Id="00001f2bc2cfe9f7e9c044789c01a303dbad6ae4bc9c" Size="0x5ca" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\www\contacterror.js" LongPathHash="0000dc997af3725cf1d0b77d7595897e59c44ed6a7dd" />
+            <File Name="DirectoryEntry.js" Id="0000e9f769a072489b121084631496c972e76df16554" Size="0x1242" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\directoryentry.js" LongPathHash="00000698ba29978246ad69552b638c3c013de00f2fd9" />
+            <File Name="CompassProxy.js" Id="0000d9fb63a0ddbe57d23bb204839219ab92021a82d0" Size="0x7af" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-device-orientation\src\windows\compassproxy.js" LongPathHash="0000778bb0eb437651e8f01c3e4d0bd60d772b275d31" />
+            <File Name="ContactOrganization.js" Id="000094ab83a1cf6f89c02971665eb27e568cb52b73bb" Size="0x54e" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\www\contactorganization.js" LongPathHash="00009baea4d3a2cc8333bd5654f3f8a53f19f98eacd8" />
+            <File Name="CompassError.js" Id="0000d5926b62c81de671d99225512b807d83f3a3f764" Size="0x4da" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-device-orientation\www\compasserror.js" LongPathHash="0000b74c28664be2764246cfef212750164e0175b5b8" />
+            <File Name="ContactFieldType.js" Id="0000736fafe323eb4ed1aa0a3162c5bf401c4858bcb6" Size="0x80e" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\www\contactfieldtype.js" LongPathHash="0000f69e5d25afaa375a96c5bf8cb393018663a24262" />
+            <File Name="ContactFindOptions.js" Id="00006d20ade50448cba24aac1a68a07d97bac16fc90e" Size="0x673" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\www\contactfindoptions.js" LongPathHash="000060e0961ba27e035eb27c5cf2e6894ff0d9e4266a" />
+            <File Name="CompassHeading.js" Id="0000a81bb8f6699d385de806a898a014ab9c0f3be398" Size="0x4c9" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-device-orientation\www\compassheading.js" LongPathHash="00002890a17e241ca6fd30fba0814664153fc0b5f311" />
+            <File Name="Acceleration.js" Id="0000610c9acb331fd1c0f953deb6c68e63f76f408034" Size="0x456" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-device-motion\www\acceleration.js" LongPathHash="0000f5047ac6a37fdd35da4c6139f03decc588613ca4" />
+            <File Name="FileProxy.js" Id="00002d4c14ab127ddf5d40eaff0af56131eb6f01e62c" Size="0xadbd" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\src\windows\fileproxy.js" LongPathHash="00005f6dd9dec61efcd69032f9754fc72aed7fd61f47" />
+            <File Name="ContactField.js" Id="00006421a42ff0ff5d9b640abab38524f148ac6b3660" Size="0x563" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\www\contactfield.js" LongPathHash="0000c79c3ad81f913ca6df8231b02f3788a3fcd87c65" />
+            <File Name="contacts.js" Id="00005664b08580367d7f21eaf4d5230a9b0541edbdbb" Size="0xe48" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-contacts\www\contacts.js" LongPathHash="0000a9a6ebe38afe67d3007fba415fbf39307bfdf420" />
+            <File Name="DeviceProxy.js" Id="0000cac76c4cb424bc82ef189690d360a7013b1f7ce2" Size="0x11c2" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-device\src\windows\deviceproxy.js" LongPathHash="0000ea6515485202bb527f4b8fabab6e590e18f12a04" />
+            <File Name="LocalFileSystem.js" Id="000076f843a28d6d2db57c2ef06439745d3512110a17" Size="0x3c0" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\localfilesystem.js" LongPathHash="00005e80a9e913d6e062bf7cf52bafaaf54f55cd2bed" />
+            <File Name="ProgressEvent.js" Id="00007f7df67592d8f18ddeaed7765184517e9c92be89" Size="0xa18" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\progressevent.js" LongPathHash="00008ff5053e95bf38c96fee6e7a10b215cf5312fd50" />
+            <File Name="requestFileSystem.js" Id="0000959d4191779c87c13991b25110f7df755c7addc4" Size="0xc98" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\requestfilesystem.js" LongPathHash="0000dca3b50b9f9d37afa799d62e22bb6e4c7056fdb0" />
+            <File Name="isChrome.js" Id="0000b5b5c04c841e6ceb9310be534673ffc3b13be284" Size="0x4d3" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\browser\ischrome.js" LongPathHash="0000bcb29fb93e697764561ea5856bb9786949055810" />
+            <File Name="FileUploadResult.js" Id="0000dd087221e06c0cf6f5e83fbfad5ba0fd36e44878" Size="0x450" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\fileuploadresult.js" LongPathHash="00002a51438d5f1df80817173019783d62b947ecd0f0" />
+            <File Name="FileWriter.js" Id="0000f44edb7ccd60f3f56112e660325f16617585c0cd" Size="0x28be" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\filewriter.js" LongPathHash="000026f321e5d2a01799f3aaeb49e9933e124ac25c19" />
+            <File Name="Metadata.js" Id="0000a746cf8385d5e97f0cd9507e92d792b4303ea69d" Size="0x5d0" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\metadata.js" LongPathHash="00008271af0a65be094cb996b0881a32b34463daba55" />
+            <File Name="GeolocationProxy.js" Id="000076d3328ef70608549621a630cc60dba1e67e6431" Size="0x1d6a" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-geolocation\src\windows\geolocationproxy.js" LongPathHash="000008b8020d15ef53dde091178b749a12603c4a96e4" />
+            <File Name="geolocation.js" Id="0000a35bd07441418c57613058a206f4f6438eb761fc" Size="0x21b8" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-geolocation\www\geolocation.js" LongPathHash="0000418c57ad4f11e9c9f185fc086f6ff2634d9973de" />
+            <File Name="FileError.js" Id="0000362aa021b64eacb95140b941190c9e1797bb66e6" Size="0x5cb" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\fileerror.js" LongPathHash="000044ff5804e97e6d50f0fc193ced0631782b7296ea" />
+            <File Name="FileReader.js" Id="00008a311b5c3b3038a9a005efe0a0908b0f7ab92d94" Size="0x26e0" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\filereader.js" LongPathHash="0000f00137d31f1e9d179f872bd9cef13ed9b83f1d11" />
+            <File Name="Position.js" Id="000097b481fc00447cc3387a69eac90fd96a5f2d0dc0" Size="0x551" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-geolocation\www\position.js" LongPathHash="00007b991030365a88979960b7c8d0106c565cdb6b46" />
+            <File Name="PositionError.js" Id="00008da4ea6d9d1069baf4a45ce8cfd40295f161e739" Size="0x563" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-geolocation\www\positionerror.js" LongPathHash="0000a28b3a17eb3c2f25090b589588ac616a6fb87344" />
+            <File Name="FileTransferError.js" Id="00008877108937b345da0427fe972e15b7e54ba7d91d" Size="0x5d3" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file-transfer\www\filetransfererror.js" LongPathHash="0000eaf88ccd477d421dfcdd3320a7ef98cc26d3e328" />
+            <File Name="fileSystems.js" Id="0000b7d796d1d9749c0501adfe09110bf03f3ffe99a4" Size="0x419" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\filesystems.js" LongPathHash="000072958585f8af5d8d783aa0ee116da91f06bc7915" />
+            <File Name="GlobalizationProxy.js" Id="0000cce0623d357dfbd5936465786b1fd999469a479b" Size="0x2740" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-globalization\src\windows\globalizationproxy.js" LongPathHash="0000899c8760b6d2bc136ec0bd766e134c2110d492b1" />
+            <File Name="Flags.js" Id="000001a77e596ac6c84295e5bc6259e820453ff137c7" Size="0x53a" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\flags.js" LongPathHash="00001bfd9019391f8a324bcd29752c7cc9c2cd95d471" />
+            <File Name="resolveLocalFileSystemURI.js" Id="00003b41f62b9ce1d463264a8132fc6eea1b68d10ba7" Size="0x1087" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\resolvelocalfilesystemuri.js" LongPathHash="00007283a3a439c2625e7682eea61a3b1896c4d56671" />
+            <File Name="FileTransferProxy.js" Id="0000e3b2b8fd4d37d20664168ecad3fdd13c16b666e1" Size="0x6958" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file-transfer\src\windows\filetransferproxy.js" LongPathHash="00003d09a212089305de23c0e025bd152ff544c90152" />
+            <File Name="Coordinates.js" Id="00009e7d6f85d89bb005f8128c782ab17ed2cf2d88e4" Size="0x81e" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-geolocation\www\coordinates.js" LongPathHash="00000f3194d291922b445f934842cbbcc5ab9cbe4f1b" />
+            <File Name="FileSystem.js" Id="00000dffc46726c37671c47ec3ccdab40a1b6905311f" Size="0x7a7" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\filesystem.js" LongPathHash="0000b4eea7105b5b8f280c46e7b1e69bddf96824b9fc" />
+            <File Name="FileUploadOptions.js" Id="00003b975b6be9d3d8bbf607a0db6532c0a6912a04cd" Size="0x729" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\fileuploadoptions.js" LongPathHash="00008a89b8212d75fcc21cd25a5ab5731f0fee991d23" />
+            <File Name="FileTransfer.js" Id="000003a81d6447939f1ad4a36cf0456504fec06640cd" Size="0x217b" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file-transfer\www\filetransfer.js" LongPathHash="0000c70183c614f7ead3dcf0ae1bbb2b1508ef0eb4c4" />
+            <File Name="fileSystemPaths.js" Id="0000f01779d07e004162acf36cbc5d7d9dd2bb9c04d8" Size="0x9f6" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\program files\windowsapps\17359chrisland.phonegapwin10_1.1.1.0_x64__z5dv5rh0r74ap\www\plugins\cordova-plugin-file\www\filesystempaths.js" LongPathHash="00001954928a0087b8d09de0db3d2912678e6f35cef8" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="0000786bc4412d01bf705d8646f92347bb3700000904" AnalysisVersion="1.60" DictionaryVersion="3.0" Type="Package" Id="17359Chrisland.phonegapWin10_1.1.1.0_x64__z5dv5rh0r74ap">
+      <AitFile ErrorCode="0" Name="Flags.js" Id="000001a77e596ac6c84295e5bc6259e820453ff137c7" />
+      <AitFile ErrorCode="0" Name="FileTransfer.js" Id="000003a81d6447939f1ad4a36cf0456504fec06640cd">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.PERSISTENT" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="FileSystem.js" Id="00000dffc46726c37671c47ec3ccdab40a1b6905311f" />
+      <AitFile ErrorCode="0" Name="MediaFile.js" Id="000014ca16214e514dfd221e5bc78d66f4bf4d87076f" />
+      <AitFile ErrorCode="0" Name="VibrationProxy.js" Id="00001769d59d6088c64ba16837dd463c086818a92f72">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Promise.as" />
+          <AitFeature Name="WinJS.Promise.timeout" />
+          <AitFeature Name="WinJS.Utilities.isPhone" />
+          <AitFeature Name="Windows.Phone.Devices" />
+          <AitFeature Name="Windows.Phone.Devices.Notification" />
+          <AitFeature Name="Windows.Phone.Devices.Notification.VibrationDevice" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="ContactError.js" Id="00001f2bc2cfe9f7e9c044789c01a303dbad6ae4bc9c" />
+      <AitFile ErrorCode="0" Name="splashscreen.js" Id="00002a705f87a31967fbbc95616a6272506316542a58" />
+      <AitFile ErrorCode="0" Name="FileProxy.js" Id="00002d4c14ab127ddf5d40eaff0af56131eb6f01e62c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.createFileFromStorageFile" />
+          <AitFeature Name="URL.createObjectURL" />
+          <AitFeature Name="WinJS.Promise.join" />
+          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer.convertBinaryToString" />
+          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer.encodeToBase64String" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localFolder.path" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.temporaryFolder.path" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption.failIfExists" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption.openIfExists" />
+          <AitFeature Name="Windows.Storage.FileAccessMode.readWrite" />
+          <AitFeature Name="Windows.Storage.FileIO.readBufferAsync" />
+          <AitFeature Name="Windows.Storage.FileIO.readTextAsync" />
+          <AitFeature Name="Windows.Storage.FileIO.writeTextAsync" />
+          <AitFeature Name="Windows.Storage.NameCollisionOption.replaceExisting" />
+          <AitFeature Name="Windows.Storage.StorageFile.getFileFromPathAsync" />
+          <AitFeature Name="Windows.Storage.StorageFolder.getFolderFromPathAsync" />
+          <AitFeature Name="Windows.Storage.Streams.Buffer" />
+          <AitFeature Name="Windows.Storage.Streams.DataReader.fromBuffer" />
+          <AitFeature Name="Windows.Storage.Streams.DataWriter" />
+          <AitFeature Name="Windows.Storage.Streams.InputStreamOptions.none" />
+          <AitFeature Name="Windows.Storage.Streams.RandomAccessStream.copyAsync" />
+          <AitFeature Name="Windows.Storage.Streams.UnicodeEncoding.utf16BE" />
+          <AitFeature Name="Windows.Storage.Streams.UnicodeEncoding.utf16LE" />
+          <AitFeature Name="Windows.Storage.Streams.UnicodeEncoding.utf8" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="CaptureProxy.js" Id="00002e605e3ae80fba757db13fd49f8fcaf0d7ffb2ac">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="URL.createObjectURL" />
+          <AitFeature Name="Windows.Devices.Enumeration.DeviceClass.videoCapture" />
+          <AitFeature Name="Windows.Devices.Enumeration.DeviceInformation.findAllAsync" />
+          <AitFeature Name="Windows.Devices.Enumeration.Panel.back" />
+          <AitFeature Name="Windows.Media.Capture" />
+          <AitFeature Name="Windows.Media.Capture.CameraCaptureUI" />
+          <AitFeature Name="Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution.highestAvailable" />
+          <AitFeature Name="Windows.Media.Capture.CameraCaptureUIMode.photo" />
+          <AitFeature Name="Windows.Media.Capture.CameraCaptureUIMode.video" />
+          <AitFeature Name="Windows.Media.Capture.CameraCaptureUIPhotoFormat.jpeg" />
+          <AitFeature Name="Windows.Media.Capture.CameraCaptureUIVideoFormat.mp4" />
+          <AitFeature Name="Windows.Media.Capture.VideoRotation.clockwise90Degrees" />
+          <AitFeature Name="Windows.Media.MediaProperties" />
+          <AitFeature Name="Windows.Media.MediaProperties.ImageEncodingProperties.createJpeg" />
+          <AitFeature Name="Windows.Media.MediaProperties.MediaEncodingProfile.createMp4" />
+          <AitFeature Name="Windows.Media.MediaProperties.VideoEncodingQuality.auto" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localFolder" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.temporaryFolder" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption.generateUniqueName" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption.replaceExisting" />
+          <AitFeature Name="Windows.Storage.NameCollisionOption.generateUniqueName" />
+          <AitFeature Name="Windows.Storage.StorageFile.getFileFromPathAsync" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Media.js" Id="00002ea55c752066afbbed5cb6fee03dd2371bdd5ec3" />
+      <AitFile ErrorCode="0" Name="FileError.js" Id="0000362aa021b64eacb95140b941190c9e1797bb66e6" />
+      <AitFile ErrorCode="0" Name="resolveLocalFileSystemURI.js" Id="00003b41f62b9ce1d463264a8132fc6eea1b68d10ba7">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.PERSISTENT" />
+          <AitFeature Name="window.resolveLocalFileSystemURI" />
+          <AitFeature Name="window.resolveLocalFileSystemURL" />
+          <AitFeature Name="window.webkitResolveLocalFileSystemURL" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="FileUploadOptions.js" Id="00003b975b6be9d3d8bbf607a0db6532c0a6912a04cd" />
+      <AitFile ErrorCode="0" Name="ClrCompression.dll" Id="00003e0ead7458e4ad4ec0ca220a18be2728eae6ea20">
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="api-ms-win-core-profile-l1-1-0.dll!QueryPerformanceCounter" />
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemAlloc" />
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemFree" />
+          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetSystemTimeAsFileTime" />
+          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetTickCount64" />
+          <AitFeature Name="api-ms-win-core-libraryloader-l1-1-0.dll!DisableThreadLibraryCalls" />
+          <AitFeature Name="api-ms-win-core-processthreads-l1-1-0.dll!GetCurrentThreadId" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="base.js" Id="000042a024a64b5f398079b3bf324312274f8bf00961">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="MSApp.execAsyncAtPriority" />
+          <AitFeature Name="MSApp.execAtPriority" />
+          <AitFeature Name="MSApp.getCurrentPriority" />
+          <AitFeature Name="MSApp.isTaskScheduledAtPriorityOrHigher" />
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Application.IOHelper.exists" />
+          <AitFeature Name="WinJS.Application.IOHelper.exists_p" />
+          <AitFeature Name="WinJS.Application.IOHelper.exists_returnValue" />
+          <AitFeature Name="WinJS.Application.IOHelper.readText" />
+          <AitFeature Name="WinJS.Application.IOHelper.readText_p" />
+          <AitFeature Name="WinJS.Application.IOHelper.readText_returnValue" />
+          <AitFeature Name="WinJS.Application.IOHelper.remove" />
+          <AitFeature Name="WinJS.Application.IOHelper.remove_p" />
+          <AitFeature Name="WinJS.Application.IOHelper.remove_returnValue" />
+          <AitFeature Name="WinJS.Application.IOHelper.writeText" />
+          <AitFeature Name="WinJS.Application.IOHelper.writeText_p" />
+          <AitFeature Name="WinJS.Application.IOHelper.writeText_returnValue" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.exists" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.exists_p" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.exists_returnValue" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.readText" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.readText_p" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.readText_returnValue" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.remove" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.remove_p" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.remove_returnValue" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.writeText" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.writeText_p" />
+          <AitFeature Name="WinJS.Application.InMemoryHelper.writeText_returnValue" />
+          <AitFeature Name="WinJS.Application._pumpEventQueue" />
+          <AitFeature Name="WinJS.Application._queuePromiseErrors" />
+          <AitFeature Name="WinJS.Application.addEventListener" />
+          <AitFeature Name="WinJS.Application.addEventListener_p" />
+          <AitFeature Name="WinJS.Application.checkpoint" />
+          <AitFeature Name="WinJS.Application.event.setPromise" />
+          <AitFeature Name="WinJS.Application.eventRecord.setPromise" />
+          <AitFeature Name="WinJS.Application.eventRecord.setPromise_p" />
+          <AitFeature Name="WinJS.Application.local" />
+          <AitFeature Name="WinJS.Application.onactivated" />
+          <AitFeature Name="WinJS.Application.onbackclick" />
+          <AitFeature Name="WinJS.Application.oncheckpoint" />
+          <AitFeature Name="WinJS.Application.onerror" />
+          <AitFeature Name="WinJS.Application.onloaded" />
+          <AitFeature Name="WinJS.Application.onready" />
+          <AitFeature Name="WinJS.Application.onsettings" />
+          <AitFeature Name="WinJS.Application.onunload" />
+          <AitFeature Name="WinJS.Application.queueEvent" />
+          <AitFeature Name="WinJS.Application.queueEvent_p" />
+          <AitFeature Name="WinJS.Application.removeEventListener" />
+          <AitFeature Name="WinJS.Application.removeEventListener_p" />
+          <AitFeature Name="WinJS.Application.roaming" />
+          <AitFeature Name="WinJS.Application.start" />
+          <AitFeature Name="WinJS.Application.stop" />
+          <AitFeature Name="WinJS.Application.temp" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.getItem" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.getItem_p" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.getItem_returnValue" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.indexOfKey" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.indexOfKey_p" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.indexOfKey_returnValue" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.length" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.notifyMutated" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.notifyMutated_p" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.setAt" />
+          <AitFeature Name="WinJS.Binding.FilteredListProjection.setAt_p" />
+          <AitFeature Name="WinJS.Binding.GroupedSortedListProjection.getItemFromKey" />
+          <AitFeature Name="WinJS.Binding.GroupedSortedListProjection.getItemFromKey_p" />
+          <AitFeature Name="WinJS.Binding.GroupedSortedListProjection.getItemFromKey_returnValue" />
+          <AitFeature Name="WinJS.Binding.GroupedSortedListProjection.groups" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.getItem" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.getItemFromKey" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.getItemFromKey_p" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.getItemFromKey_returnValue" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.getItem_p" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.getItem_returnValue" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.indexOfKey" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.indexOfKey_p" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.indexOfKey_returnValue" />
+          <AitFeature Name="WinJS.Binding.GroupsListProjection.length" />
+          <AitFeature Name="WinJS.Binding.IdBindingNotSupported" />
+          <AitFeature Name="WinJS.Binding.List" />
+          <AitFeature Name="WinJS.Binding.List." />
+          <AitFeature Name="WinJS.Binding.List.IllegalLength" />
+          <AitFeature Name="WinJS.Binding.List.List" />
+          <AitFeature Name="WinJS.Binding.List.NotSupported" />
+          <AitFeature Name="WinJS.Binding.List._endEdits" />
+          <AitFeature Name="WinJS.Binding.List.constructor" />
+          <AitFeature Name="WinJS.Binding.List.constructor_p" />
+          <AitFeature Name="WinJS.Binding.List.constructor_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.getItem" />
+          <AitFeature Name="WinJS.Binding.List.getItemFromKey" />
+          <AitFeature Name="WinJS.Binding.List.getItemFromKey_p" />
+          <AitFeature Name="WinJS.Binding.List.getItemFromKey_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.getItem_p" />
+          <AitFeature Name="WinJS.Binding.List.getItem_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.indexOfKey" />
+          <AitFeature Name="WinJS.Binding.List.indexOfKey_p" />
+          <AitFeature Name="WinJS.Binding.List.indexOfKey_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.length" />
+          <AitFeature Name="WinJS.Binding.List.move" />
+          <AitFeature Name="WinJS.Binding.List.move_p" />
+          <AitFeature Name="WinJS.Binding.List.notifyMutated" />
+          <AitFeature Name="WinJS.Binding.List.notifyMutated_p" />
+          <AitFeature Name="WinJS.Binding.List.pop" />
+          <AitFeature Name="WinJS.Binding.List.pop_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.push" />
+          <AitFeature Name="WinJS.Binding.List.push_p" />
+          <AitFeature Name="WinJS.Binding.List.push_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.reverse" />
+          <AitFeature Name="WinJS.Binding.List.reverse_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.setAt" />
+          <AitFeature Name="WinJS.Binding.List.setAt_p" />
+          <AitFeature Name="WinJS.Binding.List.shift" />
+          <AitFeature Name="WinJS.Binding.List.shift_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.sort" />
+          <AitFeature Name="WinJS.Binding.List.sort_p" />
+          <AitFeature Name="WinJS.Binding.List.sort_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.splice" />
+          <AitFeature Name="WinJS.Binding.List.splice_p" />
+          <AitFeature Name="WinJS.Binding.List.splice_returnValue" />
+          <AitFeature Name="WinJS.Binding.List.unshift" />
+          <AitFeature Name="WinJS.Binding.List.unshift_p" />
+          <AitFeature Name="WinJS.Binding.List.unshift_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.concat" />
+          <AitFeature Name="WinJS.Binding.ListBase.concat_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.createFiltered" />
+          <AitFeature Name="WinJS.Binding.ListBase.createFiltered_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.createFiltered_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.createGrouped" />
+          <AitFeature Name="WinJS.Binding.ListBase.createGrouped_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.createGrouped_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.createSorted" />
+          <AitFeature Name="WinJS.Binding.ListBase.createSorted_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.createSorted_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.every" />
+          <AitFeature Name="WinJS.Binding.ListBase.every_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.every_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.filter" />
+          <AitFeature Name="WinJS.Binding.ListBase.filter_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.filter_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.forEach" />
+          <AitFeature Name="WinJS.Binding.ListBase.forEach_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.getAt" />
+          <AitFeature Name="WinJS.Binding.ListBase.getAt_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.getAt_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.indexOf" />
+          <AitFeature Name="WinJS.Binding.ListBase.indexOf_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.indexOf_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.join" />
+          <AitFeature Name="WinJS.Binding.ListBase.join_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.join_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.lastIndexOf" />
+          <AitFeature Name="WinJS.Binding.ListBase.lastIndexOf_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.lastIndexOf_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.map" />
+          <AitFeature Name="WinJS.Binding.ListBase.map_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.map_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.notifyReload" />
+          <AitFeature Name="WinJS.Binding.ListBase.onitemchanged" />
+          <AitFeature Name="WinJS.Binding.ListBase.oniteminserted" />
+          <AitFeature Name="WinJS.Binding.ListBase.onitemmoved" />
+          <AitFeature Name="WinJS.Binding.ListBase.onitemmutated" />
+          <AitFeature Name="WinJS.Binding.ListBase.onitemremoved" />
+          <AitFeature Name="WinJS.Binding.ListBase.onreload" />
+          <AitFeature Name="WinJS.Binding.ListBase.reduce" />
+          <AitFeature Name="WinJS.Binding.ListBase.reduceRight" />
+          <AitFeature Name="WinJS.Binding.ListBase.reduceRight_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.reduceRight_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.reduce_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.reduce_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.slice" />
+          <AitFeature Name="WinJS.Binding.ListBase.slice_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.slice_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBase.some" />
+          <AitFeature Name="WinJS.Binding.ListBase.some_p" />
+          <AitFeature Name="WinJS.Binding.ListBase.some_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.pop" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.pop_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.push" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.push_p" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.push_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.shift" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.shift_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.unshift" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.unshift_p" />
+          <AitFeature Name="WinJS.Binding.ListBaseWithMutators.unshift_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListDataSource" />
+          <AitFeature Name="WinJS.Binding.ListProjection.dispose" />
+          <AitFeature Name="WinJS.Binding.ListProjection.getItemFromKey" />
+          <AitFeature Name="WinJS.Binding.ListProjection.getItemFromKey_p" />
+          <AitFeature Name="WinJS.Binding.ListProjection.getItemFromKey_returnValue" />
+          <AitFeature Name="WinJS.Binding.ListProjection.move" />
+          <AitFeature Name="WinJS.Binding.ListProjection.move_p" />
+          <AitFeature Name="WinJS.Binding.ListProjection.splice" />
+          <AitFeature Name="WinJS.Binding.ListProjection.splice_p" />
+          <AitFeature Name="WinJS.Binding.ListProjection.splice_returnValue" />
+          <AitFeature Name="WinJS.Binding.ParseError" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.getItem" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.getItem_p" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.getItem_returnValue" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.indexOfKey_p" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.indexOfKey_returnValue" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.length" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.notifyMutated" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.notifyMutated_p" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.setAt" />
+          <AitFeature Name="WinJS.Binding.SortedListProjection.setAt_p" />
+          <AitFeature Name="WinJS.Binding.Template" />
+          <AitFeature Name="WinJS.Binding.Template.Template" />
+          <AitFeature Name="WinJS.Binding.Template.bindingInitializer" />
+          <AitFeature Name="WinJS.Binding.Template.constructor" />
+          <AitFeature Name="WinJS.Binding.Template.constructor_p" />
+          <AitFeature Name="WinJS.Binding.Template.debugBreakOnRender" />
+          <AitFeature Name="WinJS.Binding.Template.disableOptimizedProcessing" />
+          <AitFeature Name="WinJS.Binding.Template.element" />
+          <AitFeature Name="WinJS.Binding.Template.extractChild" />
+          <AitFeature Name="WinJS.Binding.Template.processTimeout" />
+          <AitFeature Name="WinJS.Binding.Template.render" />
+          <AitFeature Name="WinJS.Binding.Template.render.value" />
+          <AitFeature Name="WinJS.Binding.Template.render.value_p" />
+          <AitFeature Name="WinJS.Binding.Template.render.value_returnValue" />
+          <AitFeature Name="WinJS.Binding.Template.renderItem" />
+          <AitFeature Name="WinJS.Binding.Template.renderItem_p" />
+          <AitFeature Name="WinJS.Binding.Template.renderItem_returnValue" />
+          <AitFeature Name="WinJS.Binding.Template.render_p" />
+          <AitFeature Name="WinJS.Binding.Template.render_returnValue" />
+          <AitFeature Name="WinJS.Binding.Template_name" />
+          <AitFeature Name="WinJS.Binding.UnsupportedDataType" />
+          <AitFeature Name="WinJS.Binding.addClassOneTime" />
+          <AitFeature Name="WinJS.Binding.as" />
+          <AitFeature Name="WinJS.Binding.as_p" />
+          <AitFeature Name="WinJS.Binding.as_returnValue" />
+          <AitFeature Name="WinJS.Binding.bind" />
+          <AitFeature Name="WinJS.Binding.bind_p" />
+          <AitFeature Name="WinJS.Binding.bind_returnValue" />
+          <AitFeature Name="WinJS.Binding.converter" />
+          <AitFeature Name="WinJS.Binding.converter_p" />
+          <AitFeature Name="WinJS.Binding.converter_returnValue" />
+          <AitFeature Name="WinJS.Binding.declarativeBind" />
+          <AitFeature Name="WinJS.Binding.declarativeBind_p" />
+          <AitFeature Name="WinJS.Binding.declarativeBind_returnValue" />
+          <AitFeature Name="WinJS.Binding.defaultBind" />
+          <AitFeature Name="WinJS.Binding.defaultBind." />
+          <AitFeature Name="WinJS.Binding.defaultBind_p" />
+          <AitFeature Name="WinJS.Binding.defaultBind_returnValue" />
+          <AitFeature Name="WinJS.Binding.define" />
+          <AitFeature Name="WinJS.Binding.define.return" />
+          <AitFeature Name="WinJS.Binding.define.return_p" />
+          <AitFeature Name="WinJS.Binding.define_p" />
+          <AitFeature Name="WinJS.Binding.define_returnValue" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.addProperty" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.addProperty_p" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.addProperty_returnValue" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.getProperty" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.getProperty_p" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.getProperty_returnValue" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.removeProperty" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.removeProperty_p" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.removeProperty_returnValue" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.setProperty" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.setProperty_p" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.setProperty_returnValue" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.updateProperty" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.updateProperty_p" />
+          <AitFeature Name="WinJS.Binding.dynamicObservableMixin.updateProperty_returnValue" />
+          <AitFeature Name="WinJS.Binding.expandProperties" />
+          <AitFeature Name="WinJS.Binding.expandProperties_p" />
+          <AitFeature Name="WinJS.Binding.expandProperties_returnValue" />
+          <AitFeature Name="WinJS.Binding.initializer" />
+          <AitFeature Name="WinJS.Binding.initializer_p" />
+          <AitFeature Name="WinJS.Binding.initializer_returnValue" />
+          <AitFeature Name="WinJS.Binding.observableMixin.bind" />
+          <AitFeature Name="WinJS.Binding.observableMixin.bind_p" />
+          <AitFeature Name="WinJS.Binding.observableMixin.bind_returnValue" />
+          <AitFeature Name="WinJS.Binding.observableMixin.notify" />
+          <AitFeature Name="WinJS.Binding.observableMixin.notify_p" />
+          <AitFeature Name="WinJS.Binding.observableMixin.notify_returnValue" />
+          <AitFeature Name="WinJS.Binding.observableMixin.unbind" />
+          <AitFeature Name="WinJS.Binding.observableMixin.unbind_p" />
+          <AitFeature Name="WinJS.Binding.observableMixin.unbind_returnValue" />
+          <AitFeature Name="WinJS.Binding.oneTime" />
+          <AitFeature Name="WinJS.Binding.oneTime_p" />
+          <AitFeature Name="WinJS.Binding.oneTime_returnValue" />
+          <AitFeature Name="WinJS.Binding.processAll." />
+          <AitFeature Name="WinJS.Binding.setAttribute" />
+          <AitFeature Name="WinJS.Binding.setAttributeOneTime" />
+          <AitFeature Name="WinJS.Binding.setAttributeOneTime_p" />
+          <AitFeature Name="WinJS.Binding.setAttribute_p" />
+          <AitFeature Name="WinJS.Binding.setAttribute_returnValue" />
+          <AitFeature Name="WinJS.Binding.unwrap" />
+          <AitFeature Name="WinJS.Binding.unwrap_p" />
+          <AitFeature Name="WinJS.Binding.unwrap_returnValue" />
+          <AitFeature Name="WinJS.Class.define" />
+          <AitFeature Name="WinJS.Class.define_p" />
+          <AitFeature Name="WinJS.Class.define_returnValue" />
+          <AitFeature Name="WinJS.Class.derive" />
+          <AitFeature Name="WinJS.Class.derive_p" />
+          <AitFeature Name="WinJS.Class.derive_returnValue" />
+          <AitFeature Name="WinJS.Class.mix_p" />
+          <AitFeature Name="WinJS.Class.mix_returnValue" />
+          <AitFeature Name="WinJS.ErrorFromName" />
+          <AitFeature Name="WinJS.ErrorFromName_p" />
+          <AitFeature Name="WinJS.ErrorFromName_returnValue" />
+          <AitFeature Name="WinJS.Namespace._lazy" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Namespace.defineWithParent" />
+          <AitFeature Name="WinJS.Namespace.defineWithParent_p" />
+          <AitFeature Name="WinJS.Namespace.defineWithParent_returnValue" />
+          <AitFeature Name="WinJS.Namespace.define_p" />
+          <AitFeature Name="WinJS.Namespace.define_returnValue" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Navigation.addEventListener" />
+          <AitFeature Name="WinJS.Navigation.addEventListener_p" />
+          <AitFeature Name="WinJS.Navigation.back" />
+          <AitFeature Name="WinJS.Navigation.back_p" />
+          <AitFeature Name="WinJS.Navigation.back_returnValue" />
+          <AitFeature Name="WinJS.Navigation.beforenavigate.setPromise" />
+          <AitFeature Name="WinJS.Navigation.beforenavigate.setPromise_p" />
+          <AitFeature Name="WinJS.Navigation.canGoBack" />
+          <AitFeature Name="WinJS.Navigation.canGoForward" />
+          <AitFeature Name="WinJS.Navigation.forward" />
+          <AitFeature Name="WinJS.Navigation.forward_p" />
+          <AitFeature Name="WinJS.Navigation.forward_returnValue" />
+          <AitFeature Name="WinJS.Navigation.history" />
+          <AitFeature Name="WinJS.Navigation.location" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.Navigation.navigate_p" />
+          <AitFeature Name="WinJS.Navigation.navigate_returnValue" />
+          <AitFeature Name="WinJS.Navigation.navigated.setPromise" />
+          <AitFeature Name="WinJS.Navigation.navigated.setPromise_p" />
+          <AitFeature Name="WinJS.Navigation.navigating.setPromise" />
+          <AitFeature Name="WinJS.Navigation.navigating.setPromise_p" />
+          <AitFeature Name="WinJS.Navigation.onbeforenavigate" />
+          <AitFeature Name="WinJS.Navigation.onnavigated" />
+          <AitFeature Name="WinJS.Navigation.onnavigating" />
+          <AitFeature Name="WinJS.Navigation.removeEventListener" />
+          <AitFeature Name="WinJS.Navigation.removeEventListener_p" />
+          <AitFeature Name="WinJS.Navigation.state" />
+          <AitFeature Name="WinJS.Navigation.state." />
+          <AitFeature Name="WinJS.Promise.addEventListener" />
+          <AitFeature Name="WinJS.Promise.addEventListener_p" />
+          <AitFeature Name="WinJS.Promise.any" />
+          <AitFeature Name="WinJS.Promise.any_p" />
+          <AitFeature Name="WinJS.Promise.any_returnValue" />
+          <AitFeature Name="WinJS.Promise.as" />
+          <AitFeature Name="WinJS.Promise.as_p" />
+          <AitFeature Name="WinJS.Promise.as_returnValue" />
+          <AitFeature Name="WinJS.Promise.callonerror" />
+          <AitFeature Name="WinJS.Promise.cancel" />
+          <AitFeature Name="WinJS.Promise.dispatchEvent" />
+          <AitFeature Name="WinJS.Promise.dispatchEvent_p" />
+          <AitFeature Name="WinJS.Promise.dispatchEvent_returnValue" />
+          <AitFeature Name="WinJS.Promise.done" />
+          <AitFeature Name="WinJS.Promise.is" />
+          <AitFeature Name="WinJS.Promise.is_p" />
+          <AitFeature Name="WinJS.Promise.is_returnValue" />
+          <AitFeature Name="WinJS.Promise.join" />
+          <AitFeature Name="WinJS.Promise.join_p" />
+          <AitFeature Name="WinJS.Promise.join_returnValue" />
+          <AitFeature Name="WinJS.Promise.removeEventListener" />
+          <AitFeature Name="WinJS.Promise.removeEventListener_capture" />
+          <AitFeature Name="WinJS.Promise.removeEventListener_eventType" />
+          <AitFeature Name="WinJS.Promise.removeEventListener_listener" />
+          <AitFeature Name="WinJS.Promise.then" />
+          <AitFeature Name="WinJS.Promise.thenEach" />
+          <AitFeature Name="WinJS.Promise.thenEach_p" />
+          <AitFeature Name="WinJS.Promise.thenEach_returnValue" />
+          <AitFeature Name="WinJS.Promise.then_p" />
+          <AitFeature Name="WinJS.Promise.then_returnValue" />
+          <AitFeature Name="WinJS.Promise.timeout" />
+          <AitFeature Name="WinJS.Promise.timeout_p" />
+          <AitFeature Name="WinJS.Promise.timeout_returnValue" />
+          <AitFeature Name="WinJS.Promise.wrap" />
+          <AitFeature Name="WinJS.Promise.wrapError" />
+          <AitFeature Name="WinJS.Promise.wrapError." />
+          <AitFeature Name="WinJS.Promise.wrapError_p" />
+          <AitFeature Name="WinJS.Promise.wrapError_returnValue" />
+          <AitFeature Name="WinJS.Promise.wrap_p" />
+          <AitFeature Name="WinJS.Promise.wrap_returnValue" />
+          <AitFeature Name="WinJS.PromiseStateMachine.cancel" />
+          <AitFeature Name="WinJS.PromiseStateMachine.done" />
+          <AitFeature Name="WinJS.PromiseStateMachine.done_p" />
+          <AitFeature Name="WinJS.PromiseStateMachine.then" />
+          <AitFeature Name="WinJS.PromiseStateMachine.then_p" />
+          <AitFeature Name="WinJS.PromiseStateMachine.then_returnValue" />
+          <AitFeature Name="WinJS.Res.NestingExceeded" />
+          <AitFeature Name="WinJS.Res.NotFound" />
+          <AitFeature Name="WinJS.Resources.addEventListener" />
+          <AitFeature Name="WinJS.Resources.addEventListener_p" />
+          <AitFeature Name="WinJS.Resources.getString" />
+          <AitFeature Name="WinJS.Resources.getString._p" />
+          <AitFeature Name="WinJS.Resources.getString_returnValue" />
+          <AitFeature Name="WinJS.Resources.processAll" />
+          <AitFeature Name="WinJS.Resources.processAll_p" />
+          <AitFeature Name="WinJS.UI.Animation" />
+          <AitFeature Name="WinJS.UI.Animation.continuumBackwardIn" />
+          <AitFeature Name="WinJS.UI.Animation.continuumBackwardIn_p" />
+          <AitFeature Name="WinJS.UI.Animation.continuumBackwardIn_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.continuumBackwardOut" />
+          <AitFeature Name="WinJS.UI.Animation.continuumBackwardOut_p" />
+          <AitFeature Name="WinJS.UI.Animation.continuumBackwardOut_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.continuumForwardIn" />
+          <AitFeature Name="WinJS.UI.Animation.continuumForwardIn_p" />
+          <AitFeature Name="WinJS.UI.Animation.continuumForwardIn_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.continuumForwardOut" />
+          <AitFeature Name="WinJS.UI.Animation.continuumForwardOut_p" />
+          <AitFeature Name="WinJS.UI.Animation.continuumForwardOut_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.createAddToListAnimation" />
+          <AitFeature Name="WinJS.UI.Animation.createAddToListAnimation_p" />
+          <AitFeature Name="WinJS.UI.Animation.createAddToListAnimation_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.createAddToSearchListAnimation" />
+          <AitFeature Name="WinJS.UI.Animation.createAddToSearchListAnimation_p" />
+          <AitFeature Name="WinJS.UI.Animation.createAddToSearchListAnimation_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.createCollapseAnimation" />
+          <AitFeature Name="WinJS.UI.Animation.createCollapseAnimation_p" />
+          <AitFeature Name="WinJS.UI.Animation.createCollapseAnimation_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.createDeleteFromListAnimation" />
+          <AitFeature Name="WinJS.UI.Animation.createDeleteFromListAnimation_p" />
+          <AitFeature Name="WinJS.UI.Animation.createDeleteFromListAnimation_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.createDeleteFromSearchListAnimation" />
+          <AitFeature Name="WinJS.UI.Animation.createDeleteFromSearchListAnimation_p" />
+          <AitFeature Name="WinJS.UI.Animation.createDeleteFromSearchListAnimation_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.createExpandAnimation" />
+          <AitFeature Name="WinJS.UI.Animation.createExpandAnimation_p" />
+          <AitFeature Name="WinJS.UI.Animation.createExpandAnimation_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.createPageNavigationAnimations" />
+          <AitFeature Name="WinJS.UI.Animation.createPageNavigationAnimations." />
+          <AitFeature Name="WinJS.UI.Animation.createPageNavigationAnimations_p" />
+          <AitFeature Name="WinJS.UI.Animation.createPageNavigationAnimations_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.createPeekAnimation" />
+          <AitFeature Name="WinJS.UI.Animation.createPeekAnimation_p" />
+          <AitFeature Name="WinJS.UI.Animation.createPeekAnimation_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.createRepositionAnimation" />
+          <AitFeature Name="WinJS.UI.Animation.createRepositionAnimation_p" />
+          <AitFeature Name="WinJS.UI.Animation.createRepositionAnimation_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.crossFade" />
+          <AitFeature Name="WinJS.UI.Animation.crossFade_p" />
+          <AitFeature Name="WinJS.UI.Animation.crossFade_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.dragBetweenEnter" />
+          <AitFeature Name="WinJS.UI.Animation.dragBetweenEnter_p" />
+          <AitFeature Name="WinJS.UI.Animation.dragBetweenEnter_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.dragBetweenLeave" />
+          <AitFeature Name="WinJS.UI.Animation.dragBetweenLeave_p" />
+          <AitFeature Name="WinJS.UI.Animation.dragBetweenLeave_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.dragSourceEnd" />
+          <AitFeature Name="WinJS.UI.Animation.dragSourceEnd_p" />
+          <AitFeature Name="WinJS.UI.Animation.dragSourceEnd_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.dragSourceStart" />
+          <AitFeature Name="WinJS.UI.Animation.dragSourceStart_p" />
+          <AitFeature Name="WinJS.UI.Animation.dragSourceStart_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.drillInIncoming" />
+          <AitFeature Name="WinJS.UI.Animation.drillInIncoming_p" />
+          <AitFeature Name="WinJS.UI.Animation.drillInIncoming_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.drillInOutgoing" />
+          <AitFeature Name="WinJS.UI.Animation.drillInOutgoing_p" />
+          <AitFeature Name="WinJS.UI.Animation.drillInOutgoing_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.drillOutIncoming" />
+          <AitFeature Name="WinJS.UI.Animation.drillOutIncoming_p" />
+          <AitFeature Name="WinJS.UI.Animation.drillOutIncoming_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.drillOutOutgoing" />
+          <AitFeature Name="WinJS.UI.Animation.drillOutOutgoing_p" />
+          <AitFeature Name="WinJS.UI.Animation.drillOutOutgoing_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.enterContent" />
+          <AitFeature Name="WinJS.UI.Animation.enterContent_p" />
+          <AitFeature Name="WinJS.UI.Animation.enterContent_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.enterPage" />
+          <AitFeature Name="WinJS.UI.Animation.enterPage_p" />
+          <AitFeature Name="WinJS.UI.Animation.enterPage_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.exitContent" />
+          <AitFeature Name="WinJS.UI.Animation.exitContent_p" />
+          <AitFeature Name="WinJS.UI.Animation.exitContent_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.exitPage" />
+          <AitFeature Name="WinJS.UI.Animation.exitPage_p" />
+          <AitFeature Name="WinJS.UI.Animation.exitPage_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.fadeIn" />
+          <AitFeature Name="WinJS.UI.Animation.fadeIn_p" />
+          <AitFeature Name="WinJS.UI.Animation.fadeIn_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.fadeOut" />
+          <AitFeature Name="WinJS.UI.Animation.fadeOut_p" />
+          <AitFeature Name="WinJS.UI.Animation.fadeOut_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.hideEdgeUI" />
+          <AitFeature Name="WinJS.UI.Animation.hideEdgeUI_p" />
+          <AitFeature Name="WinJS.UI.Animation.hideEdgeUI_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.hidePanel" />
+          <AitFeature Name="WinJS.UI.Animation.hidePanel_p" />
+          <AitFeature Name="WinJS.UI.Animation.hidePanel_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.hidePopup" />
+          <AitFeature Name="WinJS.UI.Animation.hidePopup_p" />
+          <AitFeature Name="WinJS.UI.Animation.hidePopup_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.pointerDown" />
+          <AitFeature Name="WinJS.UI.Animation.pointerDown_p" />
+          <AitFeature Name="WinJS.UI.Animation.pointerDown_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.pointerUp" />
+          <AitFeature Name="WinJS.UI.Animation.pointerUp_p" />
+          <AitFeature Name="WinJS.UI.Animation.pointerUp_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.showEdgeUI" />
+          <AitFeature Name="WinJS.UI.Animation.showEdgeUI_p" />
+          <AitFeature Name="WinJS.UI.Animation.showPanel" />
+          <AitFeature Name="WinJS.UI.Animation.showPanel_p" />
+          <AitFeature Name="WinJS.UI.Animation.showPanel_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.showPopup" />
+          <AitFeature Name="WinJS.UI.Animation.showPopup_p" />
+          <AitFeature Name="WinJS.UI.Animation.showPopup_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.slideDown" />
+          <AitFeature Name="WinJS.UI.Animation.slideDown_p" />
+          <AitFeature Name="WinJS.UI.Animation.slideDown_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.slideLeftIn" />
+          <AitFeature Name="WinJS.UI.Animation.slideLeftIn_p" />
+          <AitFeature Name="WinJS.UI.Animation.slideLeftIn_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.slideLeftOut" />
+          <AitFeature Name="WinJS.UI.Animation.slideLeftOut_p" />
+          <AitFeature Name="WinJS.UI.Animation.slideLeftOut_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.slideRightIn" />
+          <AitFeature Name="WinJS.UI.Animation.slideRightIn_p" />
+          <AitFeature Name="WinJS.UI.Animation.slideRightIn_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.slideRightOut" />
+          <AitFeature Name="WinJS.UI.Animation.slideRightOut_p" />
+          <AitFeature Name="WinJS.UI.Animation.slideRightOut_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.slideUp" />
+          <AitFeature Name="WinJS.UI.Animation.slideUp_p" />
+          <AitFeature Name="WinJS.UI.Animation.slideUp_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.swipeDeselect" />
+          <AitFeature Name="WinJS.UI.Animation.swipeDeselect_p" />
+          <AitFeature Name="WinJS.UI.Animation.swipeDeselect_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.swipeReveal" />
+          <AitFeature Name="WinJS.UI.Animation.swipeReveal_p" />
+          <AitFeature Name="WinJS.UI.Animation.swipeReveal_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.swipeSelect" />
+          <AitFeature Name="WinJS.UI.Animation.swipeSelect_p" />
+          <AitFeature Name="WinJS.UI.Animation.swipeSelect_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileBackwardIn" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileBackwardIn_p" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileBackwardIn_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileBackwardOut" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileBackwardOut_p" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileBackwardOut_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileForwardIn" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileForwardIn_p" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileForwardIn_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileForwardOut" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileForwardOut_p" />
+          <AitFeature Name="WinJS.UI.Animation.turnstileForwardOut_returnValue" />
+          <AitFeature Name="WinJS.UI.Animation.updateBadge" />
+          <AitFeature Name="WinJS.UI.Animation.updateBadge_p" />
+          <AitFeature Name="WinJS.UI.Animation.updateBadge_returnValue" />
+          <AitFeature Name="WinJS.UI.DOMEventMixin.addEventListener" />
+          <AitFeature Name="WinJS.UI.DOMEventMixin.addEventListener_p" />
+          <AitFeature Name="WinJS.UI.DOMEventMixin.dispatchEvent" />
+          <AitFeature Name="WinJS.UI.DOMEventMixin.dispatchEvent_p" />
+          <AitFeature Name="WinJS.UI.DOMEventMixin.dispatchEvent_returnValue" />
+          <AitFeature Name="WinJS.UI.DOMEventMixin.removeEventListener" />
+          <AitFeature Name="WinJS.UI.DOMEventMixin.removeEventListener_p" />
+          <AitFeature Name="WinJS.UI.Fragments" />
+          <AitFeature Name="WinJS.UI.Fragments.cache" />
+          <AitFeature Name="WinJS.UI.Fragments.cache_p" />
+          <AitFeature Name="WinJS.UI.Fragments.cache_returnValue" />
+          <AitFeature Name="WinJS.UI.Fragments.clearCache" />
+          <AitFeature Name="WinJS.UI.Fragments.clearCache_p" />
+          <AitFeature Name="WinJS.UI.Fragments.render" />
+          <AitFeature Name="WinJS.UI.Fragments.renderCopy" />
+          <AitFeature Name="WinJS.UI.Fragments.renderCopy_p" />
+          <AitFeature Name="WinJS.UI.Fragments.renderCopy_returnValue" />
+          <AitFeature Name="WinJS.UI.Fragments.render_p" />
+          <AitFeature Name="WinJS.UI.Fragments.render_returnValue" />
+          <AitFeature Name="WinJS.UI.GroupHeaderTapBehavior" />
+          <AitFeature Name="WinJS.UI.GroupHeaderTapBehavior.invoke" />
+          <AitFeature Name="WinJS.UI.GroupHeaderTapBehavior.none" />
+          <AitFeature Name="WinJS.UI.HtmlControl" />
+          <AitFeature Name="WinJS.UI.HtmlControl.HtmlControl" />
+          <AitFeature Name="WinJS.UI.HtmlControl.constructor" />
+          <AitFeature Name="WinJS.UI.HtmlControl.constructor_p" />
+          <AitFeature Name="WinJS.UI.HtmlControl_name" />
+          <AitFeature Name="WinJS.UI.ItemsManager.ItemIsInvalid" />
+          <AitFeature Name="WinJS.UI.ItemsManager.ItemRendererIsInvalid" />
+          <AitFeature Name="WinJS.UI.ItemsManager.ListDataSourceIsInvalid" />
+          <AitFeature Name="WinJS.UI.ListView.ObjectType" />
+          <AitFeature Name="WinJS.UI.ListView.ObjectType.footer" />
+          <AitFeature Name="WinJS.UI.ListView.ObjectType.groupHeader" />
+          <AitFeature Name="WinJS.UI.ListView.ObjectType.header" />
+          <AitFeature Name="WinJS.UI.ListView.ObjectType.item" />
+          <AitFeature Name="WinJS.UI.ListView.SelectionMode" />
+          <AitFeature Name="WinJS.UI.ListView.SelectionMode.multi" />
+          <AitFeature Name="WinJS.UI.ListView.SelectionMode.none" />
+          <AitFeature Name="WinJS.UI.ListView.SelectionMode.single" />
+          <AitFeature Name="WinJS.UI.ObjectType" />
+          <AitFeature Name="WinJS.UI.ObjectType.footer" />
+          <AitFeature Name="WinJS.UI.ObjectType.groupHeader" />
+          <AitFeature Name="WinJS.UI.ObjectType.header" />
+          <AitFeature Name="WinJS.UI.ObjectType.item" />
+          <AitFeature Name="WinJS.UI.Orientation" />
+          <AitFeature Name="WinJS.UI.Orientation.horizontal" />
+          <AitFeature Name="WinJS.UI.Orientation.vertical" />
+          <AitFeature Name="WinJS.UI.PageNavigationAnimation" />
+          <AitFeature Name="WinJS.UI.PageNavigationAnimation.continuum" />
+          <AitFeature Name="WinJS.UI.PageNavigationAnimation.enterPage" />
+          <AitFeature Name="WinJS.UI.PageNavigationAnimation.slide" />
+          <AitFeature Name="WinJS.UI.PageNavigationAnimation.turnstile" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.error" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.error_p" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.error_returnValue" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.init" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.init_p" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.init_returnValue" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.load" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.load_p" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.load_returnValue" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.process" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.process_p" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.process_returnValue" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.processed" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.processed_p" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.processed_returnValue" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.ready" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.ready_p" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.render" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.render_p" />
+          <AitFeature Name="WinJS.UI.Pages._mixin.render_returnValue" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="WinJS.UI.Pages.define_p" />
+          <AitFeature Name="WinJS.UI.Pages.define_returnValue" />
+          <AitFeature Name="WinJS.UI.Pages.dispose" />
+          <AitFeature Name="WinJS.UI.Pages.get" />
+          <AitFeature Name="WinJS.UI.Pages.get_p" />
+          <AitFeature Name="WinJS.UI.Pages.get_returnValue" />
+          <AitFeature Name="WinJS.UI.Pages.render" />
+          <AitFeature Name="WinJS.UI.Pages.render_p" />
+          <AitFeature Name="WinJS.UI.Pages.render_returnValue" />
+          <AitFeature Name="WinJS.UI.ParseError" />
+          <AitFeature Name="WinJS.UI.SelectionMode" />
+          <AitFeature Name="WinJS.UI.SelectionMode.multi" />
+          <AitFeature Name="WinJS.UI.SelectionMode.none" />
+          <AitFeature Name="WinJS.UI.SelectionMode.single" />
+          <AitFeature Name="WinJS.UI.SwipeBehavior" />
+          <AitFeature Name="WinJS.UI.SwipeBehavior.none" />
+          <AitFeature Name="WinJS.UI.SwipeBehavior.select" />
+          <AitFeature Name="WinJS.UI.TabContainer" />
+          <AitFeature Name="WinJS.UI.TabContainer.TabContainer" />
+          <AitFeature Name="WinJS.UI.TabContainer.childFocus" />
+          <AitFeature Name="WinJS.UI.TabContainer.constructor" />
+          <AitFeature Name="WinJS.UI.TabContainer.constructor_p" />
+          <AitFeature Name="WinJS.UI.TabContainer.constructor_returnValue" />
+          <AitFeature Name="WinJS.UI.TabContainer.dispose" />
+          <AitFeature Name="WinJS.UI.TabContainer.tabIndex" />
+          <AitFeature Name="WinJS.UI.TapBehavior" />
+          <AitFeature Name="WinJS.UI.TapBehavior.directSelect" />
+          <AitFeature Name="WinJS.UI.TapBehavior.invokeOnly" />
+          <AitFeature Name="WinJS.UI.TapBehavior.none" />
+          <AitFeature Name="WinJS.UI.TapBehavior.toggleSelect" />
+          <AitFeature Name="WinJS.UI.XYFocus" />
+          <AitFeature Name="WinJS.UI._Animation._completeActionPromise" />
+          <AitFeature Name="WinJS.UI._Animation._completeAnimationPromise" />
+          <AitFeature Name="WinJS.UI._ImageLoader._image" />
+          <AitFeature Name="WinJS.UI._ItemsManager" />
+          <AitFeature Name="WinJS.UI._ItemsManager._pendingReady" />
+          <AitFeature Name="WinJS.UI._ItemsManager._postEndNotifications" />
+          <AitFeature Name="WinJS.UI.disableAnimations" />
+          <AitFeature Name="WinJS.UI.enableAnimations" />
+          <AitFeature Name="WinJS.UI.eventHandler" />
+          <AitFeature Name="WinJS.UI.eventHandler_p" />
+          <AitFeature Name="WinJS.UI.eventHandler_returnValue" />
+          <AitFeature Name="WinJS.UI.executeAnimation" />
+          <AitFeature Name="WinJS.UI.executeAnimation_p" />
+          <AitFeature Name="WinJS.UI.executeAnimation_returnValue" />
+          <AitFeature Name="WinJS.UI.executeTransition" />
+          <AitFeature Name="WinJS.UI.executeTransition_p" />
+          <AitFeature Name="WinJS.UI.executeTransition_returnValue" />
+          <AitFeature Name="WinJS.UI.isAnimationEnabled" />
+          <AitFeature Name="WinJS.UI.isAnimationEnabled_returnValue" />
+          <AitFeature Name="WinJS.UI.process" />
+          <AitFeature Name="WinJS.UI.processAll" />
+          <AitFeature Name="WinJS.UI.processAll_p" />
+          <AitFeature Name="WinJS.UI.processAll_returnValue" />
+          <AitFeature Name="WinJS.UI.process_p" />
+          <AitFeature Name="WinJS.UI.process_returnValue" />
+          <AitFeature Name="WinJS.UI.scopedSelect" />
+          <AitFeature Name="WinJS.UI.scopedSelect_p" />
+          <AitFeature Name="WinJS.UI.scopedSelect_returnValue" />
+          <AitFeature Name="WinJS.UI.select.createSelect" />
+          <AitFeature Name="WinJS.UI.select.createSelect_p" />
+          <AitFeature Name="WinJS.UI.select.createSelect_returnValue" />
+          <AitFeature Name="WinJS.UI.setOptions" />
+          <AitFeature Name="WinJS.UI.setOptions_p" />
+          <AitFeature Name="WinJS.Utilities.Key" />
+          <AitFeature Name="WinJS.Utilities.Key.F1" />
+          <AitFeature Name="WinJS.Utilities.Key.F10" />
+          <AitFeature Name="WinJS.Utilities.Key.F11" />
+          <AitFeature Name="WinJS.Utilities.Key.F12" />
+          <AitFeature Name="WinJS.Utilities.Key.F2" />
+          <AitFeature Name="WinJS.Utilities.Key.F3" />
+          <AitFeature Name="WinJS.Utilities.Key.F4" />
+          <AitFeature Name="WinJS.Utilities.Key.F5" />
+          <AitFeature Name="WinJS.Utilities.Key.F6" />
+          <AitFeature Name="WinJS.Utilities.Key.F7" />
+          <AitFeature Name="WinJS.Utilities.Key.F8" />
+          <AitFeature Name="WinJS.Utilities.Key.F9" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadA" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadB" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadDPadDown" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadDPadLeft" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadDPadRight" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadDPadUp" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadLeftShoulder" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadLeftThumbstick" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadLeftThumbstickDown" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadLeftThumbstickLeft" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadLeftThumbstickRight" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadLeftThumbstickUp" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadLeftTrigger" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadMenu" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadRightShoulder" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadRightThumbstick" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadRightThumbstickDown" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadRightThumbstickLeft" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadRightThumbstickRight" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadRightThumbstickUp" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadRightTrigger" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadView" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadX" />
+          <AitFeature Name="WinJS.Utilities.Key.GamepadY" />
+          <AitFeature Name="WinJS.Utilities.Key.IME" />
+          <AitFeature Name="WinJS.Utilities.Key.NavigationAccept" />
+          <AitFeature Name="WinJS.Utilities.Key.NavigationCancel" />
+          <AitFeature Name="WinJS.Utilities.Key.NavigationDown" />
+          <AitFeature Name="WinJS.Utilities.Key.NavigationLeft" />
+          <AitFeature Name="WinJS.Utilities.Key.NavigationMenu" />
+          <AitFeature Name="WinJS.Utilities.Key.NavigationRight" />
+          <AitFeature Name="WinJS.Utilities.Key.NavigationUp" />
+          <AitFeature Name="WinJS.Utilities.Key.NavigationView" />
+          <AitFeature Name="WinJS.Utilities.Key.a" />
+          <AitFeature Name="WinJS.Utilities.Key.add" />
+          <AitFeature Name="WinJS.Utilities.Key.alt" />
+          <AitFeature Name="WinJS.Utilities.Key.b" />
+          <AitFeature Name="WinJS.Utilities.Key.backSlash" />
+          <AitFeature Name="WinJS.Utilities.Key.backspace" />
+          <AitFeature Name="WinJS.Utilities.Key.browserBack" />
+          <AitFeature Name="WinJS.Utilities.Key.browserForward" />
+          <AitFeature Name="WinJS.Utilities.Key.c" />
+          <AitFeature Name="WinJS.Utilities.Key.capsLock" />
+          <AitFeature Name="WinJS.Utilities.Key.closeBracket" />
+          <AitFeature Name="WinJS.Utilities.Key.comma" />
+          <AitFeature Name="WinJS.Utilities.Key.ctrl" />
+          <AitFeature Name="WinJS.Utilities.Key.d" />
+          <AitFeature Name="WinJS.Utilities.Key.dash" />
+          <AitFeature Name="WinJS.Utilities.Key.decimalPoint" />
+          <AitFeature Name="WinJS.Utilities.Key.deleteKey" />
+          <AitFeature Name="WinJS.Utilities.Key.divide" />
+          <AitFeature Name="WinJS.Utilities.Key.downArrow" />
+          <AitFeature Name="WinJS.Utilities.Key.e" />
+          <AitFeature Name="WinJS.Utilities.Key.end" />
+          <AitFeature Name="WinJS.Utilities.Key.enter" />
+          <AitFeature Name="WinJS.Utilities.Key.equal" />
+          <AitFeature Name="WinJS.Utilities.Key.escape" />
+          <AitFeature Name="WinJS.Utilities.Key.f" />
+          <AitFeature Name="WinJS.Utilities.Key.forwardSlash" />
+          <AitFeature Name="WinJS.Utilities.Key.g" />
+          <AitFeature Name="WinJS.Utilities.Key.graveAccent" />
+          <AitFeature Name="WinJS.Utilities.Key.h" />
+          <AitFeature Name="WinJS.Utilities.Key.home" />
+          <AitFeature Name="WinJS.Utilities.Key.i" />
+          <AitFeature Name="WinJS.Utilities.Key.insert" />
+          <AitFeature Name="WinJS.Utilities.Key.j" />
+          <AitFeature Name="WinJS.Utilities.Key.k" />
+          <AitFeature Name="WinJS.Utilities.Key.l" />
+          <AitFeature Name="WinJS.Utilities.Key.leftArrow" />
+          <AitFeature Name="WinJS.Utilities.Key.leftWindows" />
+          <AitFeature Name="WinJS.Utilities.Key.m" />
+          <AitFeature Name="WinJS.Utilities.Key.menu" />
+          <AitFeature Name="WinJS.Utilities.Key.multiply" />
+          <AitFeature Name="WinJS.Utilities.Key.n" />
+          <AitFeature Name="WinJS.Utilities.Key.num0" />
+          <AitFeature Name="WinJS.Utilities.Key.num1" />
+          <AitFeature Name="WinJS.Utilities.Key.num2" />
+          <AitFeature Name="WinJS.Utilities.Key.num3" />
+          <AitFeature Name="WinJS.Utilities.Key.num4" />
+          <AitFeature Name="WinJS.Utilities.Key.num5" />
+          <AitFeature Name="WinJS.Utilities.Key.num6" />
+          <AitFeature Name="WinJS.Utilities.Key.num7" />
+          <AitFeature Name="WinJS.Utilities.Key.num8" />
+          <AitFeature Name="WinJS.Utilities.Key.num9" />
+          <AitFeature Name="WinJS.Utilities.Key.numLock" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad0" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad1" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad2" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad3" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad4" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad5" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad6" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad7" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad8" />
+          <AitFeature Name="WinJS.Utilities.Key.numPad9" />
+          <AitFeature Name="WinJS.Utilities.Key.o" />
+          <AitFeature Name="WinJS.Utilities.Key.openBracket" />
+          <AitFeature Name="WinJS.Utilities.Key.p" />
+          <AitFeature Name="WinJS.Utilities.Key.pageDown" />
+          <AitFeature Name="WinJS.Utilities.Key.pageUp" />
+          <AitFeature Name="WinJS.Utilities.Key.pause" />
+          <AitFeature Name="WinJS.Utilities.Key.period" />
+          <AitFeature Name="WinJS.Utilities.Key.q" />
+          <AitFeature Name="WinJS.Utilities.Key.r" />
+          <AitFeature Name="WinJS.Utilities.Key.rightArrow" />
+          <AitFeature Name="WinJS.Utilities.Key.rightWindows" />
+          <AitFeature Name="WinJS.Utilities.Key.s" />
+          <AitFeature Name="WinJS.Utilities.Key.scrollLock" />
+          <AitFeature Name="WinJS.Utilities.Key.semicolon" />
+          <AitFeature Name="WinJS.Utilities.Key.shift" />
+          <AitFeature Name="WinJS.Utilities.Key.singleQuote" />
+          <AitFeature Name="WinJS.Utilities.Key.space" />
+          <AitFeature Name="WinJS.Utilities.Key.subtract" />
+          <AitFeature Name="WinJS.Utilities.Key.t" />
+          <AitFeature Name="WinJS.Utilities.Key.tab" />
+          <AitFeature Name="WinJS.Utilities.Key.u" />
+          <AitFeature Name="WinJS.Utilities.Key.upArrow" />
+          <AitFeature Name="WinJS.Utilities.Key.v" />
+          <AitFeature Name="WinJS.Utilities.Key.w" />
+          <AitFeature Name="WinJS.Utilities.Key.x" />
+          <AitFeature Name="WinJS.Utilities.Key.y" />
+          <AitFeature Name="WinJS.Utilities.Key.z" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.addClass" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.addClass_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.addClass_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.clearStyle" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.clearStyle_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.clearStyle_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.control" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.control2" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.control_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.control_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.control_returnValue2" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.forEach" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.forEach_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.forEach_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.get" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.getAttribute" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.getAttribute_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.getAttribute_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.get_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.get_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.hasClass" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.hasClass_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.hasClass_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.include" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.include_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.listen" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.listen_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.listen_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.query" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.query_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.query_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.removeClass" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.removeClass_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.removeClass_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.removeEventListener" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.removeEventListener_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.removeEventListener_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.setAttribute" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.setAttribute_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.setAttribute_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.setStyle" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.setStyle_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.setStyle_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.template" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.template_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.template_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.toggleClass" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.toggleClass_p" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection.toggleClass_returnValue" />
+          <AitFeature Name="WinJS.Utilities.QueryCollection_p" />
+          <AitFeature Name="WinJS.Utilities.Scheduler" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.JobInfoIsNoLongerValid" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.Priority" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobInfo.job" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobInfo.setPromise" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobInfo.setPromise_p" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobInfo.setWork" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobInfo.setWork_p" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobInfo.shouldYield" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobNode" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobNode.cancel" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobNode.completed" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobNode.id" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobNode.name" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobNode.owner" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobNode.pause" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobNode.priority" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._JobNode.resume" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._OwnerToken" />
+          <AitFeature Name="WinJS.Utilities.Scheduler._OwnerToken.cancelAll" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.createOwnerToken" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.createOwnerToken_returnValue" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.currentPriority" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.execHigh" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.execHigh_p" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.execHigh_returnValue" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.requestDrain" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.requestDrain_p" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.requestDrain_returnValue" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.retrieveState" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.schedule" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.schedulePromise" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.schedulePromise_p" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.schedulePromise_returnValue" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.schedule_p" />
+          <AitFeature Name="WinJS.Utilities.Scheduler.schedule_returnValue" />
+          <AitFeature Name="WinJS.Utilities._DOMWeakRefTable.cleanup" />
+          <AitFeature Name="WinJS.Utilities._setActive" />
+          <AitFeature Name="WinJS.Utilities._zoomTo" />
+          <AitFeature Name="WinJS.Utilities.addClass" />
+          <AitFeature Name="WinJS.Utilities.addClass_p" />
+          <AitFeature Name="WinJS.Utilities.addClass_returnValue" />
+          <AitFeature Name="WinJS.Utilities.children" />
+          <AitFeature Name="WinJS.Utilities.children_p" />
+          <AitFeature Name="WinJS.Utilities.children_returnValue" />
+          <AitFeature Name="WinJS.Utilities.convertToPixels" />
+          <AitFeature Name="WinJS.Utilities.convertToPixels_p" />
+          <AitFeature Name="WinJS.Utilities.convertToPixels_returnValue" />
+          <AitFeature Name="WinJS.Utilities.createEventProperties" />
+          <AitFeature Name="WinJS.Utilities.createEventProperties_p" />
+          <AitFeature Name="WinJS.Utilities.createEventProperties_returnValue" />
+          <AitFeature Name="WinJS.Utilities.data" />
+          <AitFeature Name="WinJS.Utilities.data_p" />
+          <AitFeature Name="WinJS.Utilities.data_returnValue" />
+          <AitFeature Name="WinJS.Utilities.disposeSubTree" />
+          <AitFeature Name="WinJS.Utilities.disposeSubTree_p" />
+          <AitFeature Name="WinJS.Utilities.empty" />
+          <AitFeature Name="WinJS.Utilities.empty_p" />
+          <AitFeature Name="WinJS.Utilities.empty_returnValue" />
+          <AitFeature Name="WinJS.Utilities.eventMixin.addEventListener" />
+          <AitFeature Name="WinJS.Utilities.eventMixin.addEventListener_p" />
+          <AitFeature Name="WinJS.Utilities.eventMixin.dispatchEvent" />
+          <AitFeature Name="WinJS.Utilities.eventMixin.dispatchEvent_p" />
+          <AitFeature Name="WinJS.Utilities.eventMixin.dispatchEvent_returnValue" />
+          <AitFeature Name="WinJS.Utilities.eventMixin.removeEventListener" />
+          <AitFeature Name="WinJS.Utilities.eventMixin.removeEventListener_p" />
+          <AitFeature Name="WinJS.Utilities.eventWithinElement" />
+          <AitFeature Name="WinJS.Utilities.eventWithinElement_p" />
+          <AitFeature Name="WinJS.Utilities.eventWithinElement_returnValue" />
+          <AitFeature Name="WinJS.Utilities.formatLog" />
+          <AitFeature Name="WinJS.Utilities.getContentHeight" />
+          <AitFeature Name="WinJS.Utilities.getContentHeight_p" />
+          <AitFeature Name="WinJS.Utilities.getContentHeight_returnValue" />
+          <AitFeature Name="WinJS.Utilities.getContentWidth" />
+          <AitFeature Name="WinJS.Utilities.getContentWidth_p" />
+          <AitFeature Name="WinJS.Utilities.getContentWidth_returnValue" />
+          <AitFeature Name="WinJS.Utilities.getMember" />
+          <AitFeature Name="WinJS.Utilities.getMember_p" />
+          <AitFeature Name="WinJS.Utilities.getMember_returnValue" />
+          <AitFeature Name="WinJS.Utilities.getPosition" />
+          <AitFeature Name="WinJS.Utilities.getPosition_p" />
+          <AitFeature Name="WinJS.Utilities.getPosition_returnValue" />
+          <AitFeature Name="WinJS.Utilities.getRelativeLeft" />
+          <AitFeature Name="WinJS.Utilities.getRelativeLeft_p" />
+          <AitFeature Name="WinJS.Utilities.getRelativeLeft_returnValue" />
+          <AitFeature Name="WinJS.Utilities.getRelativeTop" />
+          <AitFeature Name="WinJS.Utilities.getRelativeTop_p" />
+          <AitFeature Name="WinJS.Utilities.getRelativeTop_returnValue" />
+          <AitFeature Name="WinJS.Utilities.getScrollPosition" />
+          <AitFeature Name="WinJS.Utilities.getScrollPosition_p" />
+          <AitFeature Name="WinJS.Utilities.getScrollPosition_returnValue" />
+          <AitFeature Name="WinJS.Utilities.getTabIndex" />
+          <AitFeature Name="WinJS.Utilities.getTabIndex_p" />
+          <AitFeature Name="WinJS.Utilities.getTabIndex_returnValue" />
+          <AitFeature Name="WinJS.Utilities.getTotalHeight" />
+          <AitFeature Name="WinJS.Utilities.getTotalHeight_p" />
+          <AitFeature Name="WinJS.Utilities.getTotalHeight_returnValue" />
+          <AitFeature Name="WinJS.Utilities.getTotalWidth" />
+          <AitFeature Name="WinJS.Utilities.getTotalWidth_p" />
+          <AitFeature Name="WinJS.Utilities.getTotalWidth_returnValue" />
+          <AitFeature Name="WinJS.Utilities.hasClass" />
+          <AitFeature Name="WinJS.Utilities.hasClass_p" />
+          <AitFeature Name="WinJS.Utilities.hasClass_returnValue" />
+          <AitFeature Name="WinJS.Utilities.hasWinRT" />
+          <AitFeature Name="WinJS.Utilities.id" />
+          <AitFeature Name="WinJS.Utilities.id_p" />
+          <AitFeature Name="WinJS.Utilities.id_returnValue" />
+          <AitFeature Name="WinJS.Utilities.insertAdjacentHTML" />
+          <AitFeature Name="WinJS.Utilities.insertAdjacentHTMLUnsafe" />
+          <AitFeature Name="WinJS.Utilities.insertAdjacentHTMLUnsafe_p" />
+          <AitFeature Name="WinJS.Utilities.insertAdjacentHTML_p" />
+          <AitFeature Name="WinJS.Utilities.markDisposable" />
+          <AitFeature Name="WinJS.Utilities.markDisposable_p" />
+          <AitFeature Name="WinJS.Utilities.markSupportedForProcessing" />
+          <AitFeature Name="WinJS.Utilities.markSupportedForProcessing." />
+          <AitFeature Name="WinJS.Utilities.markSupportedForProcessing_p" />
+          <AitFeature Name="WinJS.Utilities.markSupportedForProcessing_returnValue" />
+          <AitFeature Name="WinJS.Utilities.msIsStaticHTML.insertAdjacentHTML" />
+          <AitFeature Name="WinJS.Utilities.msIsStaticHTML.insertAdjacentHTML_p" />
+          <AitFeature Name="WinJS.Utilities.msIsStaticHTML.setInnerHTML" />
+          <AitFeature Name="WinJS.Utilities.msIsStaticHTML.setInnerHTML_p" />
+          <AitFeature Name="WinJS.Utilities.msIsStaticHTML.setOuterHTML" />
+          <AitFeature Name="WinJS.Utilities.msIsStaticHTML.setOuterHTML_p" />
+          <AitFeature Name="WinJS.Utilities.query" />
+          <AitFeature Name="WinJS.Utilities.query_p" />
+          <AitFeature Name="WinJS.Utilities.query_returnValue" />
+          <AitFeature Name="WinJS.Utilities.ready" />
+          <AitFeature Name="WinJS.Utilities.ready_p" />
+          <AitFeature Name="WinJS.Utilities.ready_returnValue" />
+          <AitFeature Name="WinJS.Utilities.removeClass" />
+          <AitFeature Name="WinJS.Utilities.removeClass_p" />
+          <AitFeature Name="WinJS.Utilities.removeClass_returnValue" />
+          <AitFeature Name="WinJS.Utilities.requireSupportedForProcessing" />
+          <AitFeature Name="WinJS.Utilities.requireSupportedForProcessing_p" />
+          <AitFeature Name="WinJS.Utilities.requireSupportedForProcessing_returnValue" />
+          <AitFeature Name="WinJS.Utilities.setInnerHTML" />
+          <AitFeature Name="WinJS.Utilities.setInnerHTMLUnsafe" />
+          <AitFeature Name="WinJS.Utilities.setInnerHTMLUnsafe_p" />
+          <AitFeature Name="WinJS.Utilities.setInnerHTML_p" />
+          <AitFeature Name="WinJS.Utilities.setOuterHTML" />
+          <AitFeature Name="WinJS.Utilities.setOuterHTMLUnsafe" />
+          <AitFeature Name="WinJS.Utilities.setOuterHTMLUnsafe_p" />
+          <AitFeature Name="WinJS.Utilities.setOuterHTML_p" />
+          <AitFeature Name="WinJS.Utilities.setScrollPosition" />
+          <AitFeature Name="WinJS.Utilities.setScrollPosition_p" />
+          <AitFeature Name="WinJS.Utilities.startLog" />
+          <AitFeature Name="WinJS.Utilities.startLog2" />
+          <AitFeature Name="WinJS.Utilities.startLog_p" />
+          <AitFeature Name="WinJS.Utilities.startLog_returnValue" />
+          <AitFeature Name="WinJS.Utilities.stopLog" />
+          <AitFeature Name="WinJS.Utilities.strictProcessing" />
+          <AitFeature Name="WinJS.Utilities.toggleClass" />
+          <AitFeature Name="WinJS.Utilities.toggleClass_p" />
+          <AitFeature Name="WinJS.Utilities.toggleClass_returnValue" />
+          <AitFeature Name="WinJS.Utitilies.NonStaticHTML" />
+          <AitFeature Name="WinJS._ParallelWorkQueue.runNext" />
+          <AitFeature Name="WinJS._Telemetry.send" />
+          <AitFeature Name="WinJS._Telemetry.send_p" />
+          <AitFeature Name="WinJS.strictProcessing" />
+          <AitFeature Name="WinJS.xhr.constructor._returnValue" />
+          <AitFeature Name="WinJS.xhr_returnValue" />
+          <AitFeature Name="Windows.ApplicationModel.DesignMode.designModeEnabled" />
+          <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceContext" />
+          <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager" />
+          <AitFeature Name="Windows.ApplicationModel.Search.SearchQueryLinguisticDetails" />
+          <AitFeature Name="Windows.Data.Text.SemanticTextQuery" />
+          <AitFeature Name="Windows.Foundation.Collections.CollectionChange" />
+          <AitFeature Name="Windows.Foundation.Diagnostics" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.Globalization.ApplicationLanguages" />
+          <AitFeature Name="Windows.Globalization.Calendar" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting" />
+          <AitFeature Name="Windows.Globalization.Language" />
+          <AitFeature Name="Windows.Phone.UI.Input.HardwareButtons" />
+          <AitFeature Name="Windows.Storage.ApplicationData" />
+          <AitFeature Name="Windows.Storage.BulkAccess.FileInformationFactory" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption" />
+          <AitFeature Name="Windows.Storage.FileIO" />
+          <AitFeature Name="Windows.Storage.FileProperties.ThumbnailMode" />
+          <AitFeature Name="Windows.Storage.FileProperties.ThumbnailOptions" />
+          <AitFeature Name="Windows.Storage.FileProperties.ThumbnailType" />
+          <AitFeature Name="Windows.Storage.KnownFolders" />
+          <AitFeature Name="Windows.Storage.Search.FolderDepth" />
+          <AitFeature Name="Windows.Storage.Search.IndexerOption" />
+          <AitFeature Name="Windows.Storage.Streams.RandomAccessStreamReference" />
+          <AitFeature Name="Windows.UI.ApplicationSettings.SettingsCommand" />
+          <AitFeature Name="Windows.UI.ApplicationSettings.SettingsEdgeLocation" />
+          <AitFeature Name="Windows.UI.ApplicationSettings.SettingsPane" />
+          <AitFeature Name="Windows.UI.Core.AnimationMetrics" />
+          <AitFeature Name="Windows.UI.Core.SystemNavigationManager" />
+          <AitFeature Name="Windows.UI.Input.EdgeGesture" />
+          <AitFeature Name="Windows.UI.Input.EdgeGestureKind" />
+          <AitFeature Name="Windows.UI.Input.PointerPoint" />
+          <AitFeature Name="Windows.UI.ViewManagement.HandPreference" />
+          <AitFeature Name="Windows.UI.ViewManagement.InputPane" />
+          <AitFeature Name="Windows.UI.ViewManagement.UIColorType" />
+          <AitFeature Name="Windows.UI.ViewManagement.UISettings" />
+          <AitFeature Name="Windows.UI.WebUI.Core.WebUICommandBar" />
+          <AitFeature Name="Windows.UI.WebUI.Core.WebUICommandBarBitmapIcon" />
+          <AitFeature Name="Windows.UI.WebUI.Core.WebUICommandBarClosedDisplayMode" />
+          <AitFeature Name="Windows.UI.WebUI.Core.WebUICommandBarIconButton" />
+          <AitFeature Name="Windows.UI.WebUI.Core.WebUICommandBarSymbolIcon" />
+          <AitFeature Name="Windows.UI.WebUI.WebUIApplication" />
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.comment" />
+          <AitFeature Name="navigator.msManipulationViewsEnabled" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="cordova_plugins.js" Id="000046bed27ddd84d6b661931baabf0357b8a92f9a76">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.accelerometer" />
+          <AitFeature Name="navigator.battery" />
+          <AitFeature Name="navigator.camera" />
+          <AitFeature Name="navigator.compass" />
+          <AitFeature Name="navigator.connection" />
+          <AitFeature Name="navigator.contacts" />
+          <AitFeature Name="navigator.device.capture" />
+          <AitFeature Name="navigator.geolocation" />
+          <AitFeature Name="navigator.globalization" />
+          <AitFeature Name="navigator.network.connection" />
+          <AitFeature Name="navigator.notification" />
+          <AitFeature Name="navigator.splashscreen" />
+          <AitFeature Name="window.DirectoryEntry" />
+          <AitFeature Name="window.DirectoryReader" />
+          <AitFeature Name="window.FileEntry" />
+          <AitFeature Name="window.FileError" />
+          <AitFeature Name="window.FileReader" />
+          <AitFeature Name="window.FileSystem" />
+          <AitFeature Name="window.FileTransfer" />
+          <AitFeature Name="window.FileTransferError" />
+          <AitFeature Name="window.FileUploadOptions" />
+          <AitFeature Name="window.FileUploadResult" />
+          <AitFeature Name="window.FileWriter" />
+          <AitFeature Name="window.GlobalizationError" />
+          <AitFeature Name="window.LocalFileSystem" />
+          <AitFeature Name="window.MediaError" />
+          <AitFeature Name="window.ProgressEvent" />
+          <AitFeature Name="window.StatusBar" />
+          <AitFeature Name="window.requestFileSystem" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="index.js" Id="000048a0860e72f53f0723b9d07a26c5cb5876fa1876">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="index.js" Id="000048ed3ff6bd45f995e63ccbdb945e81fb62723fb1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="MediaFileData.js" Id="00004ed1c1603a87d7f0b967c23bcfeaedb9877201eb" />
+      <AitFile ErrorCode="0" Name="battery.js" Id="000052cdd420725ab3140a60cbe2d1731e3e44371eb4" />
+      <AitFile ErrorCode="0" Name="device.js" Id="000054c3139bcc4b3e5cb2bddcefc866ab2e04265130" />
+      <AitFile ErrorCode="0" Name="contacts.js" Id="00005664b08580367d7f21eaf4d5230a9b0541edbdbb" />
+      <AitFile ErrorCode="0" Name="statusbar.js" Id="000060a3e6b16c2965801567feda45004a6500f16ed7">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.setTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Acceleration.js" Id="0000610c9acb331fd1c0f953deb6c68e63f76f408034" />
+      <AitFile ErrorCode="0" Name="ContactField.js" Id="00006421a42ff0ff5d9b640abab38524f148ac6b3660" />
+      <AitFile ErrorCode="0" Name="accelerometer.js" Id="000065136903f4e67a0875f6b9241d6ea358ea332f5b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.dispatchEvent" />
+          <AitFeature Name="window.setInterval" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="File.js" Id="0000694e8016fef08ae7388520f3363a5fce45f0fe84" />
+      <AitFile ErrorCode="0" Name="cordova.js" Id="000069fd03e7f15f0d9322ee4cf4c0d7835a9b83eab7">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="Windows.UI.Core.AppViewBackButtonVisibility.collapsed" />
+          <AitFeature Name="Windows.UI.Core.AppViewBackButtonVisibility.visible" />
+          <AitFeature Name="Windows.UI.Core.SystemNavigationManager.getForCurrentView" />
+          <AitFeature Name="Windows.UI.WebUI.WebUIApplication.addEventListener" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.dispatchEvent" />
+          <AitFeature Name="document.getElementsByTagName" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="document.removeEventListener" />
+          <AitFeature Name="navigator.appVersion.indexOf" />
+          <AitFeature Name="window._nativeReady" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.console.warn" />
+          <AitFeature Name="window.dispatchEvent" />
+          <AitFeature Name="window.navigator" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.setTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="ContactAddress.js" Id="00006c11d285dc100bf5ec34a72d5305c6ed43171075" />
+      <AitFile ErrorCode="0" Name="ContactFindOptions.js" Id="00006d20ade50448cba24aac1a68a07d97bac16fc90e" />
+      <AitFile ErrorCode="0" Name="17359Chrisland.phonegapWin10.exe" Id="00007130c3404a604464fd24cf7baca9fb2c5f1662f8" />
+      <AitFile ErrorCode="0" Name="ContactFieldType.js" Id="0000736fafe323eb4ed1aa0a3162c5bf401c4858bcb6" />
+      <AitFile ErrorCode="0" Name="compass.js" Id="000076724427d8ef23202aa233eeafc5fc94f23ebf84">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.dispatchEvent" />
+          <AitFeature Name="window.setInterval" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="GeolocationProxy.js" Id="000076d3328ef70608549621a630cc60dba1e67e6431">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Promise.wrap" />
+          <AitFeature Name="WinJS.Promise.wrapError" />
+          <AitFeature Name="Windows.Devices.Geolocation.GeolocationAccessStatus.allowed" />
+          <AitFeature Name="Windows.Devices.Geolocation.Geolocator" />
+          <AitFeature Name="Windows.Devices.Geolocation.Geolocator.requestAccessAsync" />
+          <AitFeature Name="Windows.Devices.Geolocation.PositionAccuracy.default" />
+          <AitFeature Name="Windows.Devices.Geolocation.PositionAccuracy.high" />
+          <AitFeature Name="Windows.Devices.Geolocation.PositionStatus.disabled" />
+          <AitFeature Name="Windows.Devices.Geolocation.PositionStatus.initializing" />
+          <AitFeature Name="Windows.Devices.Geolocation.PositionStatus.noData" />
+          <AitFeature Name="Windows.Devices.Geolocation.PositionStatus.notAvailable" />
+          <AitFeature Name="Windows.Devices.Geolocation.PositionStatus.notInitialized" />
+          <AitFeature Name="Windows.Devices.Geolocation.PositionStatus.ready" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="LocalFileSystem.js" Id="000076f843a28d6d2db57c2ef06439745d3512110a17" />
+      <AitFile ErrorCode="0" Name="CameraConstants.js" Id="000077c09e58bda3f5cb25cadcb7f2c943efea6a4cc5" />
+      <AitFile ErrorCode="0" Name="BatteryProxy.js" Id="00007b0278a47343e2fcd2793bf96a5d7d51ce3179f2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Utilities.isPhone" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="CameraProxy.js" Id="00007d3957b95bcbdafcf9cdcd1d4c19115222d18c5f">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="URL.createObjectURL" />
+          <AitFeature Name="Windows.ApplicationModel.Activation.ActivationKind.pickFileContinuation" />
+          <AitFeature Name="Windows.ApplicationModel.Activation.ActivationKind.pickSaveFileContinuation" />
+          <AitFeature Name="Windows.Devices.Enumeration" />
+          <AitFeature Name="Windows.Devices.Sensors.SimpleOrientation" />
+          <AitFeature Name="Windows.Devices.Sensors.SimpleOrientation.notRotated" />
+          <AitFeature Name="Windows.Devices.Sensors.SimpleOrientation.rotated180DegreesCounterclockwise" />
+          <AitFeature Name="Windows.Devices.Sensors.SimpleOrientation.rotated270DegreesCounterclockwise" />
+          <AitFeature Name="Windows.Devices.Sensors.SimpleOrientation.rotated90DegreesCounterclockwise" />
+          <AitFeature Name="Windows.Devices.Sensors.SimpleOrientationSensor.getDefault" />
+          <AitFeature Name="Windows.Graphics.Display.DisplayInformation.getForCurrentView" />
+          <AitFeature Name="Windows.Graphics.Imaging.BitmapDecoder.createAsync" />
+          <AitFeature Name="Windows.Graphics.Imaging.BitmapEncoder.createForTranscodingAsync" />
+          <AitFeature Name="Windows.Media.Capture" />
+          <AitFeature Name="Windows.Media.Capture.CameraCaptureUI" />
+          <AitFeature Name="Windows.Media.Capture.MediaStreamType" />
+          <AitFeature Name="Windows.Media.Capture.PhotoCaptureSource.photo" />
+          <AitFeature Name="Windows.Media.Capture.VideoRotation" />
+          <AitFeature Name="Windows.Media.Capture.VideoRotation.clockwise180Degrees" />
+          <AitFeature Name="Windows.Media.Capture.VideoRotation.clockwise90Degrees" />
+          <AitFeature Name="Windows.Media.Capture.VideoRotation.none" />
+          <AitFeature Name="Windows.Media.Devices.FocusPreset.autoNormal" />
+          <AitFeature Name="Windows.Media.MediaProperties.ImageEncodingProperties.createJpeg" />
+          <AitFeature Name="Windows.Media.MediaProperties.ImageEncodingProperties.createPng" />
+          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer.decodeFromBase64String" />
+          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer.encodeToBase64String" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="Windows.Storage.CachedFileManager.completeUpdatesAsync" />
+          <AitFeature Name="Windows.Storage.CachedFileManager.deferUpdates" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption.generateUniqueName" />
+          <AitFeature Name="Windows.Storage.FileAccessMode.readWrite" />
+          <AitFeature Name="Windows.Storage.FileIO" />
+          <AitFeature Name="Windows.Storage.NameCollisionOption.replaceExisting" />
+          <AitFeature Name="Windows.Storage.Pickers.FileOpenPicker" />
+          <AitFeature Name="Windows.Storage.Pickers.FileSavePicker" />
+          <AitFeature Name="Windows.Storage.Pickers.PickerLocationId" />
+          <AitFeature Name="Windows.Storage.Provider.FileUpdateStatus.complete" />
+          <AitFeature Name="Windows.Storage.Streams.InMemoryRandomAccessStream" />
+          <AitFeature Name="Windows.Storage.Streams.RandomAccessStream.copyAndCloseAsync" />
+          <AitFeature Name="Windows.UI.WebUI.WebUIApplication" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.childNodes" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="navigator.appVersion.indexOf" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.removeEventListener" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="ProgressEvent.js" Id="00007f7df67592d8f18ddeaed7765184517e9c92be89">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createEvent" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="ContactName.js" Id="0000857335fdbd83f5d1e20ff923d094f6fd04820abf" />
+      <AitFile ErrorCode="0" Name="CameraPopoverHandle.js" Id="000086ec946d1a9beb6957eae4b287b49655397b5bb5" />
+      <AitFile ErrorCode="0" Name="FileTransferError.js" Id="00008877108937b345da0427fe972e15b7e54ba7d91d" />
+      <AitFile ErrorCode="0" Name="FileReader.js" Id="00008a311b5c3b3038a9a005efe0a0908b0f7ab92d94" />
+      <AitFile ErrorCode="0" Name="DirectoryReader.js" Id="00008c0df842b05b6565ca6ef696d2561347c154cc97" />
+      <AitFile ErrorCode="0" Name="PositionError.js" Id="00008da4ea6d9d1069baf4a45ce8cfd40295f161e739" />
+      <AitFile ErrorCode="0" Name="ContactOrganization.js" Id="000094ab83a1cf6f89c02971665eb27e568cb52b73bb" />
+      <AitFile ErrorCode="0" Name="requestFileSystem.js" Id="0000959d4191779c87c13991b25110f7df755c7addc4">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.requestFileSystem" />
+          <AitFeature Name="window.webkitRequestFileSystem" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="network.js" Id="000096a299a73f96eee85832bcc9fb4de0ad3a9d1539" />
+      <AitFile ErrorCode="0" Name="CameraPopoverOptions.js" Id="000096c4b19530be40a2adae95ee9cfa5bc84bd469e7" />
+      <AitFile ErrorCode="0" Name="Position.js" Id="000097b481fc00447cc3387a69eac90fd96a5f2d0dc0" />
+      <AitFile ErrorCode="0" Name="CaptureVideoOptions.js" Id="0000980fc82d969d34abe60d680272ff7e67e318397b" />
+      <AitFile ErrorCode="0" Name="MediaFile.js" Id="00009811c4e5745bc720174e76ff2908ae392b19873c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Storage.StorageFile.getFileFromPathAsync" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="platform.js" Id="00009aafe663654ec02dbab3a3541d728f5d687320f6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="Windows.UI.Core.AppViewBackButtonVisibility.collapsed" />
+          <AitFeature Name="Windows.UI.Core.AppViewBackButtonVisibility.visible" />
+          <AitFeature Name="Windows.UI.Core.SystemNavigationManager.getForCurrentView" />
+          <AitFeature Name="Windows.UI.WebUI.WebUIApplication.addEventListener" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="navigator.appVersion.indexOf" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="GlobalizationProxy.winmd" Id="00009b63ab08127ab23f471ae5628942535830354a85">
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="mscoree.dll!_CorDllMain" />
+        </AitCategory>
+        <AitCategory Id="DotNet">
+          <AitFeature Name="System.Boolean" />
+          <AitFeature Name="System.DateTime" />
+          <AitFeature Name="System.DateTime..ctor" />
+          <AitFeature Name="System.DateTime.AddMilliseconds" />
+          <AitFeature Name="System.DateTime.ParseExact" />
+          <AitFeature Name="System.DateTime.ToLocalTime" />
+          <AitFeature Name="System.DateTime.get_Day" />
+          <AitFeature Name="System.DateTime.get_Hour" />
+          <AitFeature Name="System.DateTime.get_Millisecond" />
+          <AitFeature Name="System.DateTime.get_Minute" />
+          <AitFeature Name="System.DateTime.get_Month" />
+          <AitFeature Name="System.DateTime.get_Second" />
+          <AitFeature Name="System.DateTime.get_Year" />
+          <AitFeature Name="System.DateTimeKind" />
+          <AitFeature Name="System.DayOfWeek" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
+          <AitFeature Name="System.Double" />
+          <AitFeature Name="System.Double.Parse" />
+          <AitFeature Name="System.Double.ToString" />
+          <AitFeature Name="System.Enum" />
+          <AitFeature Name="System.Exception" />
+          <AitFeature Name="System.Exception.get_Message" />
+          <AitFeature Name="System.Func`2" />
+          <AitFeature Name="System.Globalization.CultureInfo" />
+          <AitFeature Name="System.Globalization.CultureInfo..ctor" />
+          <AitFeature Name="System.Globalization.CultureInfo.get_CurrentCulture" />
+          <AitFeature Name="System.Globalization.CultureInfo.get_CurrentUICulture" />
+          <AitFeature Name="System.Globalization.CultureInfo.get_DateTimeFormat" />
+          <AitFeature Name="System.Globalization.CultureInfo.get_Name" />
+          <AitFeature Name="System.Globalization.CultureInfo.get_NumberFormat" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_AbbreviatedDayNames" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_AbbreviatedMonthNames" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_DayNames" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_FirstDayOfWeek" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_FullDateTimePattern" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_LongDatePattern" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_LongTimePattern" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_MonthNames" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_ShortDatePattern" />
+          <AitFeature Name="System.Globalization.DateTimeFormatInfo.get_ShortTimePattern" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_CurrencyDecimalSeparator" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_CurrencyGroupSeparator" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_CurrencyPositivePattern" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_CurrencySymbol" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_NegativeSign" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_NumberDecimalSeparator" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_NumberGroupSeparator" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_PercentDecimalSeparator" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_PercentGroupSeparator" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_PercentPositivePattern" />
+          <AitFeature Name="System.Globalization.NumberFormatInfo.get_PercentSymbol" />
+          <AitFeature Name="System.Globalization.NumberStyles" />
+          <AitFeature Name="System.IDisposable" />
+          <AitFeature Name="System.IDisposable.Dispose" />
+          <AitFeature Name="System.IFormatProvider" />
+          <AitFeature Name="System.IO.MemoryStream" />
+          <AitFeature Name="System.IO.MemoryStream..ctor" />
+          <AitFeature Name="System.IO.Stream" />
+          <AitFeature Name="System.IO.Stream.Dispose" />
+          <AitFeature Name="System.IO.Stream.set_Position" />
+          <AitFeature Name="System.IO.StreamReader" />
+          <AitFeature Name="System.IO.StreamReader..ctor" />
+          <AitFeature Name="System.IO.TextReader" />
+          <AitFeature Name="System.IO.TextReader.ReadToEnd" />
+          <AitFeature Name="System.Int32" />
+          <AitFeature Name="System.Int32.ToString" />
+          <AitFeature Name="System.NotImplementedException" />
+          <AitFeature Name="System.NotImplementedException..ctor" />
+          <AitFeature Name="System.Object" />
+          <AitFeature Name="System.Object..ctor" />
+          <AitFeature Name="System.Object.GetType" />
+          <AitFeature Name="System.Object.ToString" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Serialization.DataContractAttribute" />
+          <AitFeature Name="System.Runtime.Serialization.DataContractAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Serialization.DataMemberAttribute" />
+          <AitFeature Name="System.Runtime.Serialization.DataMemberAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Serialization.Json.DataContractJsonSerializer" />
+          <AitFeature Name="System.Runtime.Serialization.Json.DataContractJsonSerializer..ctor" />
+          <AitFeature Name="System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject" />
+          <AitFeature Name="System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject" />
+          <AitFeature Name="System.Runtime.Serialization.SerializationException" />
+          <AitFeature Name="System.Runtime.Serialization.SerializationException..ctor" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
+          <AitFeature Name="System.RuntimeTypeHandle" />
+          <AitFeature Name="System.String" />
+          <AitFeature Name="System.String.Concat" />
+          <AitFeature Name="System.String.Empty" />
+          <AitFeature Name="System.String.Equals" />
+          <AitFeature Name="System.String.Format" />
+          <AitFeature Name="System.String.IsNullOrEmpty" />
+          <AitFeature Name="System.String.Replace" />
+          <AitFeature Name="System.String.ToLower" />
+          <AitFeature Name="System.String.op_Equality" />
+          <AitFeature Name="System.Text.Encoding" />
+          <AitFeature Name="System.Text.Encoding.GetBytes" />
+          <AitFeature Name="System.Text.Encoding.get_UTF8" />
+          <AitFeature Name="System.TimeSpan" />
+          <AitFeature Name="System.TimeSpan.get_TotalSeconds" />
+          <AitFeature Name="System.TimeZoneInfo" />
+          <AitFeature Name="System.TimeZoneInfo.IsDaylightSavingTime" />
+          <AitFeature Name="System.TimeZoneInfo.get_BaseUtcOffset" />
+          <AitFeature Name="System.TimeZoneInfo.get_DisplayName" />
+          <AitFeature Name="System.TimeZoneInfo.get_Local" />
+          <AitFeature Name="System.Type" />
+          <AitFeature Name="System.Type.GetTypeFromHandle" />
+        </AitCategory>
+        <AitCategory Id="DotNetWinRt">
+          <AitFeature Name="Windows.Foundation.Metadata.ActivatableAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.ActivatableAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.DefaultAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.DefaultAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.ExclusiveToAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.ExclusiveToAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.GuidAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.GuidAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.StaticAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.StaticAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.VersionAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.VersionAttribute..ctor" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Camera.js" Id="00009d59247ac23559b12c4e5014120b7dae97f2b709">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="navigator.camera.cleanup" />
+          <AitFeature Name="navigator.camera.getPicture" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Coordinates.js" Id="00009e7d6f85d89bb005f8128c782ab17ed2cf2d88e4" />
+      <AitFile ErrorCode="0" Name="spec.html" Id="0000a0b78c721112cb1559dc0ebe866c869d2c33bda3" />
+      <AitFile ErrorCode="0" Name="geolocation.js" Id="0000a35bd07441418c57613058a206f4f6438eb761fc" />
+      <AitFile ErrorCode="0" Name="logger.js" Id="0000a3e9b1c98a1f8cf00eedf0658de5e1c13728b927">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.addEventListener" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Metadata.js" Id="0000a746cf8385d5e97f0cd9507e92d792b4303ea69d" />
+      <AitFile ErrorCode="0" Name="CompassHeading.js" Id="0000a81bb8f6699d385de806a898a014ab9c0f3be398" />
+      <AitFile ErrorCode="0" Name="Contact.js" Id="0000a8288ccaf465acb8de614ba8b3ed1077e47ef992" />
+      <AitFile ErrorCode="0" Name="console-via-logger.js" Id="0000ad91a2ae1b3d8090a7d9e665c0731777c77d2b87" />
+      <AitFile ErrorCode="0" Name="FileEntry.js" Id="0000af5bfe2e77d5083d1f4c479defa832bab9f9a94e" />
+      <AitFile ErrorCode="0" Name="index.html" Id="0000b34e93c78a3bf3f7b84506c7c5014eba42058de1" />
+      <AitFile ErrorCode="0" Name="exec.js" Id="0000b46aa05c43df1aaec9612aacf54f7821c8524ba6" />
+      <AitFile ErrorCode="0" Name="17359Chrisland.phonegapWin10.dll" Id="0000b4f5fb090fcc8f355d17e90dda6c06e4dc13b160">
+        <AitCategory Id="Com">
+          <AitFeature Name="{00000003-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00020401-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00020402-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00020403-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{01e9a621-4a64-4ed9-954f-9edeb07bd903}" />
+          <AitFeature Name="{05eb86f1-7140-5517-b88d-cbaebe57e6b1}" />
+          <AitFeature Name="{06386a7a-e009-5b0b-ab68-a8e48b516647}" />
+          <AitFeature Name="{0c5a605f-a7f1-5030-a179-9fd363caf3b5}" />
+          <AitFeature Name="{0d82bd8d-fe62-5d67-a7b9-7886dd75bc4e}" />
+          <AitFeature Name="{135a5f72-a818-54a8-b955-dff2593a3bf5}" />
+          <AitFeature Name="{163c792f-bd75-413c-bf23-b1fe7b95d825}" />
+          <AitFeature Name="{17f98625-6410-5440-9afe-434f7d515af2}" />
+          <AitFeature Name="{1a8a9d02-e482-461b-b8c7-8efad1cce590}" />
+          <AitFeature Name="{1b0d3570-0877-5ec2-8a2c-3b9539506aca}" />
+          <AitFeature Name="{1b8e9594-588e-5a07-9e65-0731a4c9a2db}" />
+          <AitFeature Name="{1c157d0f-5efe-5cec-bbd6-0c6ce9af07a5}" />
+          <AitFeature Name="{1c98c219-0b13-4240-89a5-d495dc189a00}" />
+          <AitFeature Name="{1cc0fdfc-69ee-4e43-9901-47f12687baf7}" />
+          <AitFeature Name="{1d1a8b8b-fa66-414f-9cbd-b65fc99d17fa}" />
+          <AitFeature Name="{1e036276-2f60-55f6-b7f3-f86079e6900b}" />
+          <AitFeature Name="{1e466dc5-840f-54f9-b877-5e3a9f4b6c74}" />
+          <AitFeature Name="{23d156c7-7ef9-5096-aaba-1e6c9ab5ceb4}" />
+          <AitFeature Name="{243a09cb-6f40-56af-a442-fe81431fbef5}" />
+          <AitFeature Name="{2bf27008-2eb4-5675-b1cd-e9906cc5ce64}" />
+          <AitFeature Name="{2fa22f4b-707e-4b27-ad0d-d0d8cd468fd2}" />
+          <AitFeature Name="{31e55e8a-0f05-52fd-90d3-b04aa331aaa4}" />
+          <AitFeature Name="{320b7e22-3cb0-4cdf-8663-1d28910065eb}" />
+          <AitFeature Name="{33ac68f0-1084-529a-8a17-4e7c8adb7a0c}" />
+          <AitFeature Name="{33ee3134-1dd6-4e3a-8067-d1c162e8642b}" />
+          <AitFeature Name="{398c4183-793d-5b00-819b-4aef92485e94}" />
+          <AitFeature Name="{410b7711-ff3b-477f-9c9a-d2efda302dc3}" />
+          <AitFeature Name="{41f752ef-12af-41b9-ab36-b1eb4b512460}" />
+          <AitFeature Name="{4207a996-ca2f-42f7-bde8-8b10457a7f30}" />
+          <AitFeature Name="{430ecece-1418-5d19-81b2-5ddb381603cc}" />
+          <AitFeature Name="{43929d18-5ec9-4b5a-919c-4205b0c804b6}" />
+          <AitFeature Name="{44a9796f-723e-4fdf-a218-033e75b0c084}" />
+          <AitFeature Name="{47bd7ff2-5295-57bb-9212-2b0b8692aa13}" />
+          <AitFeature Name="{4825d6c4-835a-5da1-9bdd-12e97e16fb7a}" />
+          <AitFeature Name="{4b8385bd-a2cd-5ff1-bf74-7ea580423e50}" />
+          <AitFeature Name="{4d239005-3c2a-41b1-9022-536bb9cf93b1}" />
+          <AitFeature Name="{4e534bdf-2960-4878-97a4-9624deb72f2d}" />
+          <AitFeature Name="{50850b26-267e-451b-a890-ab6a370245ee}" />
+          <AitFeature Name="{53425270-77b4-426b-859f-81e19d512546}" />
+          <AitFeature Name="{53f926d2-083c-4283-b45b-81c007237e44}" />
+          <AitFeature Name="{576a207d-977c-5b36-b54d-624ec86c53a3}" />
+          <AitFeature Name="{594ebe78-55ea-4a88-a50d-3402ae1f9cf2}" />
+          <AitFeature Name="{59e7ae0c-c29d-5ad6-bef5-dedb52a198e1}" />
+          <AitFeature Name="{5db5fa32-707c-5849-a06b-91c8eb9d10e8}" />
+          <AitFeature Name="{5e52f8ce-aced-5a42-95b4-f674dd84885e}" />
+          <AitFeature Name="{5f738b61-f86a-4917-93d1-f1ee9d3b35d9}" />
+          <AitFeature Name="{5fc9c137-ebb7-5e6c-9cba-686f2ec2b0bb}" />
+          <AitFeature Name="{60141efb-f2f9-5377-96fd-f8c60d9558b5}" />
+          <AitFeature Name="{60db2fa8-b705-4fde-a7d6-ebbb1891d39e}" />
+          <AitFeature Name="{6588d2a6-3972-5247-a870-e217b76de89c}" />
+          <AitFeature Name="{67e9eadb-324b-5661-a405-ded8445b1eea}" />
+          <AitFeature Name="{687a15ce-ae58-5e19-974e-34f17d92b941}" />
+          <AitFeature Name="{69e5b468-f6fc-4013-aaa2-d53f1757d3b5}" />
+          <AitFeature Name="{6b5828d7-6b8d-58c4-ba3a-9f796710f53c}" />
+          <AitFeature Name="{6b5e0516-de96-4f0a-8d57-dcc9dae36c76}" />
+          <AitFeature Name="{6d05fb29-7885-544e-9382-a1ad391a3fa4}" />
+          <AitFeature Name="{6f5e63c7-e3aa-4eae-b0e0-dcf321ca4b2f}" />
+          <AitFeature Name="{704b4ec9-0373-506c-8af3-57e9245f1c4e}" />
+          <AitFeature Name="{72284824-db8c-42f8-b08c-53ff357dad82}" />
+          <AitFeature Name="{72d1cb78-b3ef-4f75-a80b-6fd9dae2944b}" />
+          <AitFeature Name="{79b9d5f2-879e-4b89-b798-79e47598030c}" />
+          <AitFeature Name="{7bca64fd-150c-5d50-b56b-9f4f474c5930}" />
+          <AitFeature Name="{7c2b1b85-6917-4361-9c02-0d9e3a420b95}" />
+          <AitFeature Name="{7d7daf45-368d-4364-852b-dec927037b85}" />
+          <AitFeature Name="{7fdcc3d7-e13e-5f76-afc6-0769c4086399}" />
+          <AitFeature Name="{80653f68-2cb2-4c1f-b590-f0f52bf4fd1a}" />
+          <AitFeature Name="{8221aa0e-d1d2-5b22-a918-05672812d12f}" />
+          <AitFeature Name="{861bf39b-6368-4dee-b40e-74684a5ce714}" />
+          <AitFeature Name="{86664478-8029-46fe-a789-1c2f3e2ffb5c}" />
+          <AitFeature Name="{8d720cdf-3934-5d3f-9a55-40e8063b086a}" />
+          <AitFeature Name="{8e86a951-04b9-4bd2-929d-fef3f71621d0}" />
+          <AitFeature Name="{8f9d0c94-5688-4b0c-a9f1-f931f7fa3dc3}" />
+          <AitFeature Name="{905a0fe0-bc53-11df-8c49-001e4fc686da}" />
+          <AitFeature Name="{905a0fe1-bc53-11df-8c49-001e4fc686da}" />
+          <AitFeature Name="{905a0fe2-bc53-11df-8c49-001e4fc686da}" />
+          <AitFeature Name="{905a0fe6-bc53-11df-8c49-001e4fc686da}" />
+          <AitFeature Name="{92c3102f-a327-5318-a6c1-76f6b2a0abfb}" />
+          <AitFeature Name="{94390dc5-e442-5870-88b6-007e232f902c}" />
+          <AitFeature Name="{94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90}" />
+          <AitFeature Name="{954e4bcf-0a77-42fb-b777-c2ed58a52e44}" />
+          <AitFeature Name="{95949780-1de9-40f2-b452-0de9f1910012}" />
+          <AitFeature Name="{96369f54-8eb6-48f0-abce-c1b211e627c3}" />
+          <AitFeature Name="{96d922e6-a7ca-5c21-b9f7-e4504e8c7112}" />
+          <AitFeature Name="{9a16e097-f2e7-5bdc-b9f6-5a3f96ad3b59}" />
+          <AitFeature Name="{9b0252ac-0c27-44f8-b792-9793fb66c63e}" />
+          <AitFeature Name="{9d66fe6c-a4d7-4c23-9e85-675f304c252d}" />
+          <AitFeature Name="{9e365e57-48b2-4160-956f-c7385120bbfc}" />
+          <AitFeature Name="{9fac9741-5cc4-4336-ae38-6212b75a915a}" />
+          <AitFeature Name="{9ffdf7f5-b8c9-4ef0-b7d2-1de626561fc8}" />
+          <AitFeature Name="{a19f7ba8-d8cd-5df2-ab44-fefd26644484}" />
+          <AitFeature Name="{a6612fb6-7688-4ace-95fb-359538e7aa01}" />
+          <AitFeature Name="{ab8e5d11-b0c1-5a21-95ae-f16bf3a37624}" />
+          <AitFeature Name="{ac7f26f2-feb7-5b2a-8ac4-345bc62caede}" />
+          <AitFeature Name="{ad73197d-2cfa-57a6-8993-9fac40feb791}" />
+          <AitFeature Name="{af5207d9-c433-4764-b3fd-8fa6bfbcbadc}" />
+          <AitFeature Name="{af7586a8-6b21-5f61-bff1-1b682293ad96}" />
+          <AitFeature Name="{afcbbe9b-582b-4133-9648-e44ca46ee491}" />
+          <AitFeature Name="{b0d63b78-78ad-5e31-b6d8-e32a0e16c447}" />
+          <AitFeature Name="{b5ecd72b-991b-5ec7-bacc-7ccd6bebe331}" />
+          <AitFeature Name="{b6bf67dd-84bd-44f8-ac1c-93ebcb9dba91}" />
+          <AitFeature Name="{bafaecad-484d-41be-ba80-1d58c65263ea}" />
+          <AitFeature Name="{bb3c25e5-46cf-4317-a3f5-02621ad54478}" />
+          <AitFeature Name="{bb78502a-f79d-54fa-92c9-90c5039fdf7e}" />
+          <AitFeature Name="{bd4b0143-3a22-5ee2-92ed-7bc3c129e52b}" />
+          <AitFeature Name="{be9b3080-b2c3-422b-bce1-ec90efb5d7b5}" />
+          <AitFeature Name="{bf16482e-80ed-51f0-b9c9-3a804e2d6403}" />
+          <AitFeature Name="{bf666554-7605-5d9a-b14e-18d8c8472afe}" />
+          <AitFeature Name="{c1d3d1a2-ae17-5a5f-b5a2-bdcc8844889a}" />
+          <AitFeature Name="{ca30221d-86d9-40fb-a26b-d44eb7cf08ea}" />
+          <AitFeature Name="{cb43ccc9-446b-4a4f-be97-757771be5203}" />
+          <AitFeature Name="{cdb5efb3-5788-509d-9be1-71ccb8a3362a}" />
+          <AitFeature Name="{d1f276c4-98d8-4636-bf49-eb79507548e9}" />
+          <AitFeature Name="{d26b2819-897f-5c7d-84d6-56d796561431}" />
+          <AitFeature Name="{dacbffdc-68ef-5fd0-b657-782d0ac9807e}" />
+          <AitFeature Name="{e2663f37-2e1b-500c-ad68-c3ed7a8f74c8}" />
+          <AitFeature Name="{e521c894-2c26-5946-9e61-2b5e188d01ed}" />
+          <AitFeature Name="{e53056ad-8a0e-5c41-a62d-c92e3ac2de58}" />
+          <AitFeature Name="{e5ce1a07-8d33-5007-ba64-7d2508ccf85c}" />
+          <AitFeature Name="{e609698d-6aab-5adc-8b3f-a852f9e56fd0}" />
+          <AitFeature Name="{e6f2fef0-0712-487f-b313-f300b8d79aa1}" />
+          <AitFeature Name="{e80d3d9d-96c9-579e-8e42-d550700de925}" />
+          <AitFeature Name="{e827e8b9-08d9-4a8e-a0ac-fe5ed3cbbbd3}" />
+          <AitFeature Name="{e9bdaaf0-cbf6-5c72-be90-29cbf3a1319b}" />
+          <AitFeature Name="{e9f78726-829a-5f67-8d19-95ef154b7742}" />
+          <AitFeature Name="{ea0fe405-d432-5ac7-9ef8-5a65e1f97d7e}" />
+          <AitFeature Name="{ea79a752-f7c2-4265-b1bd-c4dec4e4f080}" />
+          <AitFeature Name="{eccb574a-c684-5572-a679-6b0842cfb57f}" />
+          <AitFeature Name="{efe76d10-cb60-50ad-8a4f-6885cd6212a1}" />
+          <AitFeature Name="{f56158df-8947-5480-96ed-36c1057877ea}" />
+          <AitFeature Name="{f5f69427-55ed-5512-8429-d4f6626dfcdd}" />
+          <AitFeature Name="{f6d1f700-49c2-52ae-8154-826f9908773c}" />
+          <AitFeature Name="{f744d97b-9988-44fb-abd6-5378844cfa8b}" />
+          <AitFeature Name="{fa3f6186-4214-428c-a64c-14c9ac7315ea}" />
+          <AitFeature Name="{faaea667-fbeb-49cb-adb2-71184c556e43}" />
+          <AitFeature Name="{fe2f3d47-5d47-5499-8374-430c7cda0204}" />
+        </AitCategory>
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemAlloc" />
+          <AitFeature Name="api-ms-win-core-localization-l1-2-1.dll!IsValidLocaleName" />
+          <AitFeature Name="api-ms-win-core-localization-l1-2-1.dll!ResolveLocaleName" />
+          <AitFeature Name="oleaut32.dll!SysFreeString" />
+          <AitFeature Name="oleaut32.dll!SysStringLen" />
+          <AitFeature Name="mrt100_app.dll!RhAllocLocal" />
+          <AitFeature Name="mrt100_app.dll!RhBoxAny" />
+          <AitFeature Name="mrt100_app.dll!RhExceptionHandling_ThrowClasslibIndexOutOfRangeException" />
+          <AitFeature Name="mrt100_app.dll!RhExceptionHandling_ThrowClasslibOverflowException" />
+          <AitFeature Name="mrt100_app.dll!RhHandleGet" />
+          <AitFeature Name="mrt100_app.dll!RhHandleSet" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckArrayStore" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckCast" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckCastArray" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckCastClass" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckCastInterface" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckUnbox" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_IsInstanceOf" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_IsInstanceOfArray" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_IsInstanceOfClass" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_IsInstanceOfInterface" />
+          <AitFeature Name="mrt100_app.dll!RhUnboxAny" />
+          <AitFeature Name="mrt100_app.dll!RhpAssignRefEDX" />
+          <AitFeature Name="mrt100_app.dll!RhpCheckCctor2" />
+          <AitFeature Name="mrt100_app.dll!RhpCheckedAssignRefEDX" />
+          <AitFeature Name="mrt100_app.dll!RhpCheckedLockCmpXchg" />
+          <AitFeature Name="mrt100_app.dll!RhpCopyAnyWithWriteBarrier" />
+          <AitFeature Name="mrt100_app.dll!RhpCopyMultibyteWithWriteBarrier" />
+          <AitFeature Name="mrt100_app.dll!RhpGetThread" />
+          <AitFeature Name="mrt100_app.dll!RhpInitMultibyte" />
+          <AitFeature Name="mrt100_app.dll!RhpInitialInterfaceDispatch" />
+          <AitFeature Name="mrt100_app.dll!RhpLoopHijack" />
+          <AitFeature Name="mrt100_app.dll!RhpNewArray" />
+          <AitFeature Name="mrt100_app.dll!RhpNewFast" />
+          <AitFeature Name="mrt100_app.dll!RhpNewFinalizable" />
+          <AitFeature Name="mrt100_app.dll!RhpPInvokeExceptionGuard" />
+          <AitFeature Name="mrt100_app.dll!RhpRegisterModule" />
+          <AitFeature Name="mrt100_app.dll!RhpResolveInterfaceMethod" />
+          <AitFeature Name="mrt100_app.dll!RhpRethrow" />
+          <AitFeature Name="mrt100_app.dll!RhpReversePInvoke" />
+          <AitFeature Name="mrt100_app.dll!RhpReversePInvokeReturn" />
+          <AitFeature Name="mrt100_app.dll!RhpSuppressGcStress" />
+          <AitFeature Name="mrt100_app.dll!RhpThrowEx" />
+          <AitFeature Name="mrt100_app.dll!RhpTrapThreads" />
+          <AitFeature Name="mrt100_app.dll!RhpUnsuppressGcStress" />
+          <AitFeature Name="mrt100_app.dll!RhpWaitForGC" />
+          <AitFeature Name="mrt100_app.dll!RhpWaitForSuspend" />
+          <AitFeature Name="sharedlibrary.dll!$NEAT$" />
+          <AitFeature Name="sharedlibrary.dll!CreateCommandLine" />
+          <AitFeature Name="sharedlibrary.dll!CtorCharArray" />
+          <AitFeature Name="sharedlibrary.dll!CtorCharArrayStartLength" />
+          <AitFeature Name="sharedlibrary.dll!CtorCharPtr" />
+          <AitFeature Name="sharedlibrary.dll!CtorCharPtrStartLength" />
+        </AitCategory>
+        <AitCategory Id="WRTClassFromSearch">
+          <AitFeature Name="Windows.ApplicationModel.Package" />
+          <AitFeature Name="Windows.Globalization.Language" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.System.Threading.ThreadPool" />
+          <AitFeature Name="Windows.Globalization.GeographicRegion" />
+          <AitFeature Name="Windows.Globalization.Calendar" />
+          <AitFeature Name="Windows.Foundation.Diagnostics.AsyncCausalityTracer" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmProvider" />
+          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer" />
+          <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager" />
+          <AitFeature Name="Windows.System.Threading.ThreadPoolTimer" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmNames" />
+          <AitFeature Name="Windows.Globalization.CalendarIdentifiers" />
+          <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceContext" />
+          <AitFeature Name="Windows.UI.Core.CoreWindow" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="GlobalizationError.js" Id="0000b5316837561a921dff186949036638375712ebec" />
+      <AitFile ErrorCode="0" Name="isChrome.js" Id="0000b5b5c04c841e6ceb9310be534673ffc3b13be284">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.webkitRequestFileSystem" />
+          <AitFeature Name="window.webkitResolveLocalFileSystemURL" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="fileSystems.js" Id="0000b7d796d1d9749c0501adfe09110bf03f3ffe99a4" />
+      <AitFile ErrorCode="0" Name="jasmine-html.js" Id="0000b81e1a586e905ed958c9a7b2285506de1c0fd1ae">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createTextNode" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="capture.js" Id="0000c8d873410465ebae6a1694ad552fa3dd1f9cb3a1" />
+      <AitFile ErrorCode="0" Name="NotificationProxy.js" Id="0000c977d695b31d98b7c50e2657c9fd6224e10381a2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Utilities.isPhone" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+          <AitFeature Name="Windows.UI.Popups.UICommand" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createTextNode" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="DeviceProxy.js" Id="0000cac76c4cb424bc82ef189690d360a7013b1f7ce2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Devices.Enumeration.Pnp" />
+          <AitFeature Name="Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localSettings" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localSettings.values.deviceId" />
+          <AitFeature Name="Windows.Storage.Streams.DataReader.fromBuffer" />
+          <AitFeature Name="Windows.System.Profile.HardwareIdentification.getPackageSpecificToken" />
+          <AitFeature Name="Windows.System.RemoteDesktop.InteractiveSession.isRemote" />
+          <AitFeature Name="window.clientInformation.userAgent" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="GlobalizationProxy.js" Id="0000cce0623d357dfbd5936465786b1fd999469a479b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.DateTimeFormatter" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.DayFormat.none" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.abbreviated" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.full" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.none" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.HourFormat.none" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.MinuteFormat.none" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.MonthFormat.abbreviated" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.MonthFormat.full" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.MonthFormat.none" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.SecondFormat.none" />
+          <AitFeature Name="Windows.Globalization.DateTimeFormatting.YearFormat.none" />
+          <AitFeature Name="Windows.Globalization.GeographicRegion" />
+          <AitFeature Name="Windows.Globalization.NumberFormatting.CurrencyFormatter" />
+          <AitFeature Name="Windows.Globalization.NumberFormatting.DecimalFormatter" />
+          <AitFeature Name="Windows.Globalization.NumberFormatting.IncrementNumberRounder" />
+          <AitFeature Name="Windows.Globalization.NumberFormatting.PercentFormatter" />
+          <AitFeature Name="Windows.Globalization.NumberFormatting.RoundingAlgorithm.roundHalfUp" />
+          <AitFeature Name="Windows.System.UserProfile.GlobalizationPreferences.languages" />
+          <AitFeature Name="Windows.System.UserProfile.GlobalizationPreferences.weekStartsOn" />
+          <AitFeature Name="navigator.language" />
+          <AitFeature Name="navigator.userLanguage" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Connection.js" Id="0000cd6c58c06688d486c67c2c85eb3fe24b33e04e5e" />
+      <AitFile ErrorCode="0" Name="ContactProxy.js" Id="0000cfe8f81e879f545196ed7a0267c3044247846ee2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="URL.createObjectURL" />
+          <AitFeature Name="WinJS.Promise.join" />
+          <AitFeature Name="Windows.ApplicationModel.Contacts" />
+          <AitFeature Name="Windows.ApplicationModel.Contacts.ContactFieldType.phoneNumber" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.Phone.PersonalInformation" />
+          <AitFeature Name="Windows.Storage.Streams.RandomAccessStreamReference.createFromFile" />
+          <AitFeature Name="Windows.Storage.Streams.RandomAccessStreamReference.createFromUri" />
+          <AitFeature Name="navigator.contacts.find" />
+          <AitFeature Name="navigator.userAgent.indexOf" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="CaptureImageOptions.js" Id="0000d06025efd7d3734db5f3ceb2b90a669ea5dab6e9" />
+      <AitFile ErrorCode="0" Name="globalization.js" Id="0000d08e041d2efa7a1e9b019c6275616f0d0c2a7c3d" />
+      <AitFile ErrorCode="0" Name="notification.js" Id="0000d30536d816ced599fc7ab8cabf5c15d1397fedad" />
+      <AitFile ErrorCode="0" Name="CompassError.js" Id="0000d5926b62c81de671d99225512b807d83f3a3f764" />
+      <AitFile ErrorCode="0" Name="AccelerometerProxy.js" Id="0000d7b3c54efa5b34cbdbae73a60a41dc4ea8547f69">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Devices.Sensors.Accelerometer.getDefault" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="CaptureAudioOptions.js" Id="0000d98a235e7cae1412e4d55ed56049cc6f1c52ce01" />
+      <AitFile ErrorCode="0" Name="CompassProxy.js" Id="0000d9fb63a0ddbe57d23bb204839219ab92021a82d0">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Devices.Sensors.Compass.getDefault" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="FileUploadResult.js" Id="0000dd087221e06c0cf6f5e83fbfad5ba0fd36e44878" />
+      <AitFile ErrorCode="0" Name="StatusBarProxy.js" Id="0000ddefe29a7de92f9881c63164d80c9ddc1e65c7de">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.UI.ViewManagement" />
+          <AitFeature Name="Windows.UI.ViewManagement.StatusBar.getForCurrentView" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="inappbrowser.js" Id="0000df203839cbf9e683366f8b8c66aa7c94fa1716dc">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.open.bind" />
+          <AitFeature Name="window.parent.ripple" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="MediaProxy.js" Id="0000e00b73f71071911d2373260a0526be7dd4fbe076">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.Media.Capture.MediaCapture" />
+          <AitFeature Name="Windows.Media.Capture.MediaCaptureInitializationSettings" />
+          <AitFeature Name="Windows.Media.Capture.StreamingCaptureMode.audio" />
+          <AitFeature Name="Windows.Media.MediaProperties.AudioEncodingQuality.auto" />
+          <AitFeature Name="Windows.Media.MediaProperties.MediaEncodingProfile.createM4a" />
+          <AitFeature Name="Windows.Media.MediaProperties.MediaEncodingProfile.createMp3" />
+          <AitFeature Name="Windows.Media.MediaProperties.MediaEncodingProfile.createWma" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localFolder" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localFolder.getFolderAsync" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.localFolder.path" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.temporaryFolder.createFileAsync" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.temporaryFolder.getFolderAsync" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current.temporaryFolder.path" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption.replaceExisting" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="InAppBrowserProxy.js" Id="0000e0ce467b19f31b8cbd3df45d8dfcab4d30803277">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.Storage.FileIO.readTextAsync" />
+          <AitFeature Name="Windows.Storage.StorageFile.getFileFromApplicationUriAsync" />
+          <AitFeature Name="Windows.System.Launcher.launchUriAsync" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.style.msOverflowStyle" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.head.appendChild" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="vibration.js" Id="0000e10160322aed5e10b42a65fc15cfde4cf7bcf341" />
+      <AitFile ErrorCode="0" Name="FileTransferProxy.js" Id="0000e3b2b8fd4d37d20664168ecad3fdd13c16b666e1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Promise.wrap" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.Networking.BackgroundTransfer.BackgroundDownloader" />
+          <AitFeature Name="Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart" />
+          <AitFeature Name="Windows.Networking.BackgroundTransfer.BackgroundUploader" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="Windows.Storage.CreationCollisionOption.replaceExisting" />
+          <AitFeature Name="Windows.Storage.StorageFile.getFileFromPathAsync" />
+          <AitFeature Name="Windows.Storage.StorageFolder.getFolderFromPathAsync" />
+          <AitFeature Name="Windows.Storage.Streams.ByteOrder.littleEndian" />
+          <AitFeature Name="Windows.Storage.Streams.DataReader" />
+          <AitFeature Name="Windows.Storage.Streams.DataWriter" />
+          <AitFeature Name="Windows.Storage.Streams.InMemoryRandomAccessStream" />
+          <AitFeature Name="Windows.Storage.Streams.UnicodeEncoding.utf8" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="MediaError.js" Id="0000e412bd50e5414348ab0192c65520d8980c8d03bd">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.MediaError" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="DirectoryEntry.js" Id="0000e9f769a072489b121084631496c972e76df16554" />
+      <AitFile ErrorCode="0" Name="NetworkInfoProxy.js" Id="0000eda1f99f2e69605e25462271e742472e510e47ba">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="Windows.Networking.Connectivity" />
+          <AitFeature Name="Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="SplashScreenProxy.js" Id="0000ef8c2b77b20cf107aa5a940468a32a25adeb2689">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Utilities.isPhone" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="window.location.protocol.indexOf" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="fileSystemPaths.js" Id="0000f01779d07e004162acf36cbc5d7d9dd2bb9c04d8" />
+      <AitFile ErrorCode="0" Name="FileWriter.js" Id="0000f44edb7ccd60f3f56112e660325f16617585c0cd">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.ArrayBuffer" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="CaptureError.js" Id="0000f6ca386a70fd2d4ea50cf626e1d3fb51c9827063" />
+      <AitFile ErrorCode="0" Name="helper.js" Id="0000f7cee7a95ae0a920dc19c285758fb82b2a5a6610">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="window.getComputedStyle" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="Entry.js" Id="0000fa4e292cd14a9d605e97693c98c39f5d94a2196b" />
+      <AitFile ErrorCode="0" Name="jasmine.js" Id="0000fd3911b419bca1282f80dbf5262778cd1fe35dcb" />
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

@@ -7,17 +7,12 @@
     <author email="support@phonegap.com" href="http://phonegap.com">Chrisland</author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
-
     <preference name="phonegap-version" value="cli-6.1.0" />
     <preference name="windows-appx-target" value="uap" />
     <preference name="windows-arch" value="anycpu" />
     <preference name="windows-identity-name" value="17359Chrisland.phonegapWin10" />
-
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
-
-
     <icon src="icon.png" />
-
     <platform name="wp8">
         <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
         <icon height="159" platform="wp8" src="www/res/icon/wp8/Background.png" width="159" />
@@ -47,5 +42,5 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-
+    <engine name="windows" spec="~4.3.2" />
 </widget>

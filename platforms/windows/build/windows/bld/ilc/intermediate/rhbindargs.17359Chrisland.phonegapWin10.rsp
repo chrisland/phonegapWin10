@@ -1,0 +1,15 @@
+/osver:6.2
+/appcontainer
+/runtime:mrt100_app
+/eh:clr
+/pdb
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"C:\Users\post\Documents\git\phonegapWin10\platforms\windows\build\windows\bld\ilc\intermediate\MDIL\17359Chrisland.phonegapWin10.mdilexe"
+"/i:C:\Users\post\Documents\git\phonegapWin10\platforms\windows\build\windows\bld\ilc\intermediate\MDIL\"
+/out:"C:\Users\post\Documents\git\phonegapWin10\platforms\windows\build\windows\bld\ilc\intermediate\Native\17359Chrisland.phonegapWin10.exe"
+"/res:C:\Users\post\Documents\git\phonegapWin10\platforms\windows\build\windows\bld\ilc\intermediate\Native.res"
+"/i:C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\ARM\ret\MDIL"
+/shimexe
+/classlib:SharedLibrary
